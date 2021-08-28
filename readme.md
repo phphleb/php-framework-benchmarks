@@ -9,6 +9,10 @@ or run locally
 ```bash
 $ php -S localhost:8000
 ```
+If there are problems with caching
+```bash
+chmod -R 777 ./php-framework-benchmarks/
+```
 
 PHP version higher than 7.0 is required as well as PHP extensions for the tested frameworks specified by their vendors.
 
