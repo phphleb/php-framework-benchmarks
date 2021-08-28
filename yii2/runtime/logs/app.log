@@ -43492,3 +43492,1802 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1630144077.0346
     'REQUEST_TIME' => 1630144077
 ]
+2021-08-28 11:32:10 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:10 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6InZGdHIzaW9zNU4rZ3hxWXdjeUk1WkE9PSIsInZhbHVlIjoiY2hmcGkyRi9hcnJkRXN6N2lZc1FKOFpvSktQWlRYL0REVUlGaWVEZW9nSFB4bEgrck0zdlpVc09BeEhDL1AycmFSKy8xTHppRCtzdUR1MiswZ3AycTBwWHU3MnhMOURBRmlySHN6NlJoT1RhVndBVk9zZnVGNkNPOTZSdVY2b0QiLCJtYWMiOiIwYWQ3NWM4ZWRhZGFjNmZhY2IzMzU2YTcxODMyYTNjMjgyZDhkNTRkMGY5ZDZlZWNiYWQ5M2Q0OTliYjMwN2RiIn0='
+    'laravel_session' => 'eyJpdiI6Ik10QkFBdE9JU0c4b3NIU0NRWTJWWkE9PSIsInZhbHVlIjoiUE1Ud0NpdkVFMjFaRTQrZ3ZrdE5QTVlvMkpJVnhxSmVwWERIMFZwS0VFYlQxYW5Sam5FemtNRDEzZGFaYWdRSXNqTE9FcEh0QzlPWFBCVWc0ZmxpQVdKYnYwNFFsNkhia0xySDJ3bkRCckRqOEFBVmgxazZmckw3c2JKTy9MdzEiLCJtYWMiOiJlZjVmMTI3YTY1ZmYzNGM2YjhkOGMyZTNkZWYxYmE2MTI5ZTg5NWU2MzIwYjEzZWJlNjBmMGMzNmU0YTA5MDc4In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 0
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 0
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 0
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 0
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 0
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 0
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 0
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58256'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6InZGdHIzaW9zNU4rZ3hxWXdjeUk1WkE9PSIsInZhbHVlIjoiY2hmcGkyRi9hcnJkRXN6N2lZc1FKOFpvSktQWlRYL0REVUlGaWVEZW9nSFB4bEgrck0zdlpVc09BeEhDL1AycmFSKy8xTHppRCtzdUR1MiswZ3AycTBwWHU3MnhMOURBRmlySHN6NlJoT1RhVndBVk9zZnVGNkNPOTZSdVY2b0QiLCJtYWMiOiIwYWQ3NWM4ZWRhZGFjNmZhY2IzMzU2YTcxODMyYTNjMjgyZDhkNTRkMGY5ZDZlZWNiYWQ5M2Q0OTliYjMwN2RiIn0%3D; laravel_session=eyJpdiI6Ik10QkFBdE9JU0c4b3NIU0NRWTJWWkE9PSIsInZhbHVlIjoiUE1Ud0NpdkVFMjFaRTQrZ3ZrdE5QTVlvMkpJVnhxSmVwWERIMFZwS0VFYlQxYW5Sam5FemtNRDEzZGFaYWdRSXNqTE9FcEh0QzlPWFBCVWc0ZmxpQVdKYnYwNFFsNkhia0xySDJ3bkRCckRqOEFBVmgxazZmckw3c2JKTy9MdzEiLCJtYWMiOiJlZjVmMTI3YTY1ZmYzNGM2YjhkOGMyZTNkZWYxYmE2MTI5ZTg5NWU2MzIwYjEzZWJlNjBmMGMzNmU0YTA5MDc4In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150330.7834
+    'REQUEST_TIME' => 1630150330
+]
+2021-08-28 11:32:13 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6InZGdHIzaW9zNU4rZ3hxWXdjeUk1WkE9PSIsInZhbHVlIjoiY2hmcGkyRi9hcnJkRXN6N2lZc1FKOFpvSktQWlRYL0REVUlGaWVEZW9nSFB4bEgrck0zdlpVc09BeEhDL1AycmFSKy8xTHppRCtzdUR1MiswZ3AycTBwWHU3MnhMOURBRmlySHN6NlJoT1RhVndBVk9zZnVGNkNPOTZSdVY2b0QiLCJtYWMiOiIwYWQ3NWM4ZWRhZGFjNmZhY2IzMzU2YTcxODMyYTNjMjgyZDhkNTRkMGY5ZDZlZWNiYWQ5M2Q0OTliYjMwN2RiIn0='
+    'laravel_session' => 'eyJpdiI6Ik10QkFBdE9JU0c4b3NIU0NRWTJWWkE9PSIsInZhbHVlIjoiUE1Ud0NpdkVFMjFaRTQrZ3ZrdE5QTVlvMkpJVnhxSmVwWERIMFZwS0VFYlQxYW5Sam5FemtNRDEzZGFaYWdRSXNqTE9FcEh0QzlPWFBCVWc0ZmxpQVdKYnYwNFFsNkhia0xySDJ3bkRCckRqOEFBVmgxazZmckw3c2JKTy9MdzEiLCJtYWMiOiJlZjVmMTI3YTY1ZmYzNGM2YjhkOGMyZTNkZWYxYmE2MTI5ZTg5NWU2MzIwYjEzZWJlNjBmMGMzNmU0YTA5MDc4In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 0
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 0
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 0
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 0
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 0
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 0
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 0
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58889'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=2'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=2'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6InZGdHIzaW9zNU4rZ3hxWXdjeUk1WkE9PSIsInZhbHVlIjoiY2hmcGkyRi9hcnJkRXN6N2lZc1FKOFpvSktQWlRYL0REVUlGaWVEZW9nSFB4bEgrck0zdlpVc09BeEhDL1AycmFSKy8xTHppRCtzdUR1MiswZ3AycTBwWHU3MnhMOURBRmlySHN6NlJoT1RhVndBVk9zZnVGNkNPOTZSdVY2b0QiLCJtYWMiOiIwYWQ3NWM4ZWRhZGFjNmZhY2IzMzU2YTcxODMyYTNjMjgyZDhkNTRkMGY5ZDZlZWNiYWQ5M2Q0OTliYjMwN2RiIn0%3D; laravel_session=eyJpdiI6Ik10QkFBdE9JU0c4b3NIU0NRWTJWWkE9PSIsInZhbHVlIjoiUE1Ud0NpdkVFMjFaRTQrZ3ZrdE5QTVlvMkpJVnhxSmVwWERIMFZwS0VFYlQxYW5Sam5FemtNRDEzZGFaYWdRSXNqTE9FcEh0QzlPWFBCVWc0ZmxpQVdKYnYwNFFsNkhia0xySDJ3bkRCckRqOEFBVmgxazZmckw3c2JKTy9MdzEiLCJtYWMiOiJlZjVmMTI3YTY1ZmYzNGM2YjhkOGMyZTNkZWYxYmE2MTI5ZTg5NWU2MzIwYjEzZWJlNjBmMGMzNmU0YTA5MDc4In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150333.682
+    'REQUEST_TIME' => 1630150333
+]
+2021-08-28 11:32:16 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '3'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6InJCUFhtdkVEc1V3SjlxTWNHRDNORlE9PSIsInZhbHVlIjoiTURTakdTbkJib3cxRmd6TVBrVXJuRURKYmlGRlVoQS9VMlZaNWxHKzJ5ZDJXcXBUQkFORU5uOHdRT0NSOEd6NVBBT21oVC91eHZRdlVxY3RGdmNFbjdwbVZtSkhlSnhvdDZkSitXNUF3Q0k5WFdRSzdtR3lHTlFNVDVSc3J1Y1kiLCJtYWMiOiJhM2UzMWQ2ZmY3ZGRiNTZlYmIwOTU0N2FiYTU5MWI4ZGZhYTdjMTMxMWViNmI3NTRiNzYwYWEyYzlkNDZhMmUyIn0='
+    'laravel_session' => 'eyJpdiI6ImpSTExXWjBnc1VuMVl1aUl2ekhFUWc9PSIsInZhbHVlIjoicUhnSklBeERKenU3bC8rRzlsTWV6bmRpWDc5Zmp4OCtEREpqWC9XZzhrMUsyOXBSRHdzNjlGNy9nUHdGNTBaRTQ4QUhPZ25jKy9nS1JPZWRMK1lhS2xVSElZL1Y4WDhqRDlKOW5iUXVLYlNLT2swZUF1RDRkVmFFeWFrdXBTL2oiLCJtYWMiOiIxM2FhOWFmYzU2ZmIzOWQ0NzgxODU4ZTU5YmY4MTY1ZmUwZTIzMDFlZWMwOGE1M2QzZjRiOTdlYTExYTQ3Y2I1In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 0
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 0
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 0
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 0
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 0
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 0
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 0
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50503'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=3'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=3'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6InJCUFhtdkVEc1V3SjlxTWNHRDNORlE9PSIsInZhbHVlIjoiTURTakdTbkJib3cxRmd6TVBrVXJuRURKYmlGRlVoQS9VMlZaNWxHKzJ5ZDJXcXBUQkFORU5uOHdRT0NSOEd6NVBBT21oVC91eHZRdlVxY3RGdmNFbjdwbVZtSkhlSnhvdDZkSitXNUF3Q0k5WFdRSzdtR3lHTlFNVDVSc3J1Y1kiLCJtYWMiOiJhM2UzMWQ2ZmY3ZGRiNTZlYmIwOTU0N2FiYTU5MWI4ZGZhYTdjMTMxMWViNmI3NTRiNzYwYWEyYzlkNDZhMmUyIn0%3D; laravel_session=eyJpdiI6ImpSTExXWjBnc1VuMVl1aUl2ekhFUWc9PSIsInZhbHVlIjoicUhnSklBeERKenU3bC8rRzlsTWV6bmRpWDc5Zmp4OCtEREpqWC9XZzhrMUsyOXBSRHdzNjlGNy9nUHdGNTBaRTQ4QUhPZ25jKy9nS1JPZWRMK1lhS2xVSElZL1Y4WDhqRDlKOW5iUXVLYlNLT2swZUF1RDRkVmFFeWFrdXBTL2oiLCJtYWMiOiIxM2FhOWFmYzU2ZmIzOWQ0NzgxODU4ZTU5YmY4MTY1ZmUwZTIzMDFlZWMwOGE1M2QzZjRiOTdlYTExYTQ3Y2I1In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150336.1633
+    'REQUEST_TIME' => 1630150336
+]
+2021-08-28 11:32:18 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6InVZWWdVSmlidHlyUVplWVV5NGJqWkE9PSIsInZhbHVlIjoiYnhTQWZwUDVFQzFyYzFvRWx0My94L05QUThDbXd2Mnlnbis2S2dCQ0xNYTlmc0pUUzBnOTFxNEMwd2RQWXFoa2x4dTFHM2pTQ1Jnem90dU1TamQ4bS81d29NNStvZ1FaSFVDeTFCbVRwakh4cHNuVGladlE4Y3JBcjUwM253MjAiLCJtYWMiOiJhN2U5NTlkNmQ4ZmYyN2EwMjRiNzA5ZjBlM2Y3OTIyYjBjMDJjMzIxMWQwYWViYjczMmRmYzM2NWVjMGQ0NmNmIn0='
+    'laravel_session' => 'eyJpdiI6IkxqdjVHSVVPSG5saE9qWVdKdjhTSlE9PSIsInZhbHVlIjoiWDhDSVh6OFdHRGxwdkxDT2lySlVxZEJGcGt1RFNYdmtQWXVFWHYrUnF2bFp3c0hYZ1B5RFRJZ1NkaFZKSWdHZ1g3VllaRFJjVjAySVlwKzdJRFJGN2lpcWpXY3RZQndyNjJOZDMvK3A0b1NmQVliRkpqZEJBMFlnR1AwZmIyZkEiLCJtYWMiOiI3NmQwZTcxMGQyODk1NGZlZjFhMzYxYjUxZGRlNmVmM2VmOGY4Yzg5NGRjMDVlNTRjY2U2YTA5MDJjYThhOTZjIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 0
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 0
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 0
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 0
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 0
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 0
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 0
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '61959'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=4'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=4'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6InVZWWdVSmlidHlyUVplWVV5NGJqWkE9PSIsInZhbHVlIjoiYnhTQWZwUDVFQzFyYzFvRWx0My94L05QUThDbXd2Mnlnbis2S2dCQ0xNYTlmc0pUUzBnOTFxNEMwd2RQWXFoa2x4dTFHM2pTQ1Jnem90dU1TamQ4bS81d29NNStvZ1FaSFVDeTFCbVRwakh4cHNuVGladlE4Y3JBcjUwM253MjAiLCJtYWMiOiJhN2U5NTlkNmQ4ZmYyN2EwMjRiNzA5ZjBlM2Y3OTIyYjBjMDJjMzIxMWQwYWViYjczMmRmYzM2NWVjMGQ0NmNmIn0%3D; laravel_session=eyJpdiI6IkxqdjVHSVVPSG5saE9qWVdKdjhTSlE9PSIsInZhbHVlIjoiWDhDSVh6OFdHRGxwdkxDT2lySlVxZEJGcGt1RFNYdmtQWXVFWHYrUnF2bFp3c0hYZ1B5RFRJZ1NkaFZKSWdHZ1g3VllaRFJjVjAySVlwKzdJRFJGN2lpcWpXY3RZQndyNjJOZDMvK3A0b1NmQVliRkpqZEJBMFlnR1AwZmIyZkEiLCJtYWMiOiI3NmQwZTcxMGQyODk1NGZlZjFhMzYxYjUxZGRlNmVmM2VmOGY4Yzg5NGRjMDVlNTRjY2U2YTA5MDJjYThhOTZjIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150338.0689
+    'REQUEST_TIME' => 1630150338
+]
+2021-08-28 11:32:20 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '5'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6InVZWWdVSmlidHlyUVplWVV5NGJqWkE9PSIsInZhbHVlIjoiYnhTQWZwUDVFQzFyYzFvRWx0My94L05QUThDbXd2Mnlnbis2S2dCQ0xNYTlmc0pUUzBnOTFxNEMwd2RQWXFoa2x4dTFHM2pTQ1Jnem90dU1TamQ4bS81d29NNStvZ1FaSFVDeTFCbVRwakh4cHNuVGladlE4Y3JBcjUwM253MjAiLCJtYWMiOiJhN2U5NTlkNmQ4ZmYyN2EwMjRiNzA5ZjBlM2Y3OTIyYjBjMDJjMzIxMWQwYWViYjczMmRmYzM2NWVjMGQ0NmNmIn0='
+    'laravel_session' => 'eyJpdiI6IkxqdjVHSVVPSG5saE9qWVdKdjhTSlE9PSIsInZhbHVlIjoiWDhDSVh6OFdHRGxwdkxDT2lySlVxZEJGcGt1RFNYdmtQWXVFWHYrUnF2bFp3c0hYZ1B5RFRJZ1NkaFZKSWdHZ1g3VllaRFJjVjAySVlwKzdJRFJGN2lpcWpXY3RZQndyNjJOZDMvK3A0b1NmQVliRkpqZEJBMFlnR1AwZmIyZkEiLCJtYWMiOiI3NmQwZTcxMGQyODk1NGZlZjFhMzYxYjUxZGRlNmVmM2VmOGY4Yzg5NGRjMDVlNTRjY2U2YTA5MDJjYThhOTZjIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 0
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 0
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 0
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 0
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 0
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 0
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 0
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49345'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=5'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=5'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6InVZWWdVSmlidHlyUVplWVV5NGJqWkE9PSIsInZhbHVlIjoiYnhTQWZwUDVFQzFyYzFvRWx0My94L05QUThDbXd2Mnlnbis2S2dCQ0xNYTlmc0pUUzBnOTFxNEMwd2RQWXFoa2x4dTFHM2pTQ1Jnem90dU1TamQ4bS81d29NNStvZ1FaSFVDeTFCbVRwakh4cHNuVGladlE4Y3JBcjUwM253MjAiLCJtYWMiOiJhN2U5NTlkNmQ4ZmYyN2EwMjRiNzA5ZjBlM2Y3OTIyYjBjMDJjMzIxMWQwYWViYjczMmRmYzM2NWVjMGQ0NmNmIn0%3D; laravel_session=eyJpdiI6IkxqdjVHSVVPSG5saE9qWVdKdjhTSlE9PSIsInZhbHVlIjoiWDhDSVh6OFdHRGxwdkxDT2lySlVxZEJGcGt1RFNYdmtQWXVFWHYrUnF2bFp3c0hYZ1B5RFRJZ1NkaFZKSWdHZ1g3VllaRFJjVjAySVlwKzdJRFJGN2lpcWpXY3RZQndyNjJOZDMvK3A0b1NmQVliRkpqZEJBMFlnR1AwZmIyZkEiLCJtYWMiOiI3NmQwZTcxMGQyODk1NGZlZjFhMzYxYjUxZGRlNmVmM2VmOGY4Yzg5NGRjMDVlNTRjY2U2YTA5MDJjYThhOTZjIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150339.9219
+    'REQUEST_TIME' => 1630150339
+]
+2021-08-28 11:32:22 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IllYTTBCdjJQTWN1SG1ObTc3dllCa2c9PSIsInZhbHVlIjoiTUlXZ0JybFFHNEVZN1lqRjUzbHNxSzl4T3dManc3YWVRTllKNlk3UHFPdFFybWFpTENSME5KdFlabDF2b000S1BiOU1FcStYQmFvWTFPUlh1bWM3NkRIQW5uN05RVFcvZ1RBSk1BajVUYmdlSjQ1aXMyQVhMRWtWaFAzNUZNaVIiLCJtYWMiOiJiYzg5ZGJiNGU5YjkwNzZlNDJhZjJiODJmNWFkYTE5NmFhZDJiODIzZDk5MGFlOTlhYzI3M2M2YmFjNjQzMjdiIn0='
+    'laravel_session' => 'eyJpdiI6InlHWWhNRHh6RzFuTno2MGJ4NEpwV0E9PSIsInZhbHVlIjoiSml2THp0S1JOdmZwcUpNN2NOM2RFcWJOaGlscVUrUjl3OUNFd3FLV3Y3Y2VUNXNYbjFub2RBbzZ6dHlIaGxDYXlFQUxqMmt5L2pNU2VCbEtBYWVuUGwzQVRIcmNzSkdFc1EzV3ZtdHA1LzdmeHNXWitmQWtoRkVTQ1pqbTZSOXoiLCJtYWMiOiI5MjQ3NTIxY2NkY2FlMzU2ZGU0ODgxMWE0M2ZlNjJkZmU4YmZiYWEyZjQ5OGVmYjRlYWQwYjJiNjU3MjdlYjU4In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 0
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 0
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.1154759
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 1.10546
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 0
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0.1872671
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 1.50316
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 0.2846029
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 4.59946
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 0
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51903'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=6'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=6'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IllYTTBCdjJQTWN1SG1ObTc3dllCa2c9PSIsInZhbHVlIjoiTUlXZ0JybFFHNEVZN1lqRjUzbHNxSzl4T3dManc3YWVRTllKNlk3UHFPdFFybWFpTENSME5KdFlabDF2b000S1BiOU1FcStYQmFvWTFPUlh1bWM3NkRIQW5uN05RVFcvZ1RBSk1BajVUYmdlSjQ1aXMyQVhMRWtWaFAzNUZNaVIiLCJtYWMiOiJiYzg5ZGJiNGU5YjkwNzZlNDJhZjJiODJmNWFkYTE5NmFhZDJiODIzZDk5MGFlOTlhYzI3M2M2YmFjNjQzMjdiIn0%3D; laravel_session=eyJpdiI6InlHWWhNRHh6RzFuTno2MGJ4NEpwV0E9PSIsInZhbHVlIjoiSml2THp0S1JOdmZwcUpNN2NOM2RFcWJOaGlscVUrUjl3OUNFd3FLV3Y3Y2VUNXNYbjFub2RBbzZ6dHlIaGxDYXlFQUxqMmt5L2pNU2VCbEtBYWVuUGwzQVRIcmNzSkdFc1EzV3ZtdHA1LzdmeHNXWitmQWtoRkVTQ1pqbTZSOXoiLCJtYWMiOiI5MjQ3NTIxY2NkY2FlMzU2ZGU0ODgxMWE0M2ZlNjJkZmU4YmZiYWEyZjQ5OGVmYjRlYWQwYjJiNjU3MjdlYjU4In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150341.9257
+    'REQUEST_TIME' => 1630150341
+]
+2021-08-28 11:32:24 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IkNScG1rUmcrSU0waEpvaG5FVlBySEE9PSIsInZhbHVlIjoiL2dUWkdkNXlqT2lGcHpyUzdxTTNCbWF3V2VvVEM1dFJlak5WMTVIUWdDamNIM2lUTkhFQWh4Z0tpVFg0anBSYzFOSGVlZnpaS3R1a05yN3JyQi96SXlEamFiVXFoSThBSXd5TU1oNzlHQ1lmRU5WKzJxMFdIeXI5NUZ4ZWJGMlgiLCJtYWMiOiI3ZTk0MjFiMTlkNDg3MmY0ZDFjZjVmMTkxNGE4NDllYTM5MDUwNTdkNzAyZWJiMTZiOGQyNjMxMWFlY2FhNDgwIn0='
+    'laravel_session' => 'eyJpdiI6IlZLV0R1ZURlS1o3cmxLZk5aU0hRcVE9PSIsInZhbHVlIjoiNDFOOGYvdkthUWFlditkSnhjaVAvNXQzREE0aHlVUXlFMGtFdms0VEpNcGNYa1Z5MmU5dTJiRklyR3RGaXY5OGUwb0hMRmhWNmlnek96R1d0amtvRjVXRlNCU2w2c0phWm5yc3lDazJINFNIUDdYeUgyUEdmSFV5clBvbEE4azIiLCJtYWMiOiI1M2UzZTJhOTRkZjUyN2Y4NjRlOWFmODJhMjRkNzFjNzIxZjEzZDAxOWRlMmEyZmRhNzkyYTMyOTcyZjFiOWI0In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.0640941
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 1.55196
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 0.2256749
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 4.6939
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.2493689
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 2.21359
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 0.6021299
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 12.52542
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0.377229
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 3.00768
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 0.5168779
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 9.2014
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 0.4422441
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 5.45002
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63199'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=7'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IkNScG1rUmcrSU0waEpvaG5FVlBySEE9PSIsInZhbHVlIjoiL2dUWkdkNXlqT2lGcHpyUzdxTTNCbWF3V2VvVEM1dFJlak5WMTVIUWdDamNIM2lUTkhFQWh4Z0tpVFg0anBSYzFOSGVlZnpaS3R1a05yN3JyQi96SXlEamFiVXFoSThBSXd5TU1oNzlHQ1lmRU5WKzJxMFdIeXI5NUZ4ZWJGMlgiLCJtYWMiOiI3ZTk0MjFiMTlkNDg3MmY0ZDFjZjVmMTkxNGE4NDllYTM5MDUwNTdkNzAyZWJiMTZiOGQyNjMxMWFlY2FhNDgwIn0%3D; laravel_session=eyJpdiI6IlZLV0R1ZURlS1o3cmxLZk5aU0hRcVE9PSIsInZhbHVlIjoiNDFOOGYvdkthUWFlditkSnhjaVAvNXQzREE0aHlVUXlFMGtFdms0VEpNcGNYa1Z5MmU5dTJiRklyR3RGaXY5OGUwb0hMRmhWNmlnek96R1d0amtvRjVXRlNCU2w2c0phWm5yc3lDazJINFNIUDdYeUgyUEdmSFV5clBvbEE4azIiLCJtYWMiOiI1M2UzZTJhOTRkZjUyN2Y4NjRlOWFmODJhMjRkNzFjNzIxZjEzZDAxOWRlMmEyZmRhNzkyYTMyOTcyZjFiOWI0In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150344.0055
+    'REQUEST_TIME' => 1630150344
+]
+2021-08-28 11:32:26 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6ImlyM2U3WkN4THdFVXdVWmpnei9kWVE9PSIsInZhbHVlIjoiNjEzVHdMaUpkUy9USVdtcjJkK1RHVkFydzdJd29IYWEwQUR1bHE2ZGFCb1orNFJJN3lwdm42YVl5ZE9POUxBRitybkQwT1hNZTlXYjVuLzErVkErTDVob1hCTTVEaHYxVkNLRXN4NDJSeUxiaUlEbjRadklWVEU0MzZzUTJZOWEiLCJtYWMiOiI1ZDY0NDBiZGZiMmJkNTc0Zjc2MjhiZDMxMDJkODRmMzMyNGQ1NmVjZjA2MTJkMmI0MTQxMDUwZjM1YmIwYmRkIn0='
+    'laravel_session' => 'eyJpdiI6InhoQk02VGNwbFozdHFJMjVjMkVkckE9PSIsInZhbHVlIjoiQU94d1h1eVhJbTFnaFZmSC9wZjFOcjNqZUt4QldGRGhEVUJwM21jQnZneTJPR2Q0VlJiMGVaZFFPeHB3d2pDYU5WMWVSeTZJR0xoVVdBY3p1RDJ3cVNFQUZhTC9rWGtLcEVCODRiajhTUnBneE5GUmpaM2pEQnlFdmVjWWlwdTYiLCJtYWMiOiJiYTJkZjUwYmUxMTRkZDcwOTBmNDA0MDBmYjg2OTE2MWIzZjMxN2FlZmM1ZWE2ZTkzNjQ1NzI1NmY0N2FhN2MxIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.1076191
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 3.10392
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 0.5662418
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 9.39026
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.308404
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 3.32172
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 1.2334127
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 25.05096
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0.5015059
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 4.5122
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 0.7458458
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 13.80334
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 0.7720683
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 10.90004
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '65079'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=8'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=8'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6ImlyM2U3WkN4THdFVXdVWmpnei9kWVE9PSIsInZhbHVlIjoiNjEzVHdMaUpkUy9USVdtcjJkK1RHVkFydzdJd29IYWEwQUR1bHE2ZGFCb1orNFJJN3lwdm42YVl5ZE9POUxBRitybkQwT1hNZTlXYjVuLzErVkErTDVob1hCTTVEaHYxVkNLRXN4NDJSeUxiaUlEbjRadklWVEU0MzZzUTJZOWEiLCJtYWMiOiI1ZDY0NDBiZGZiMmJkNTc0Zjc2MjhiZDMxMDJkODRmMzMyNGQ1NmVjZjA2MTJkMmI0MTQxMDUwZjM1YmIwYmRkIn0%3D; laravel_session=eyJpdiI6InhoQk02VGNwbFozdHFJMjVjMkVkckE9PSIsInZhbHVlIjoiQU94d1h1eVhJbTFnaFZmSC9wZjFOcjNqZUt4QldGRGhEVUJwM21jQnZneTJPR2Q0VlJiMGVaZFFPeHB3d2pDYU5WMWVSeTZJR0xoVVdBY3p1RDJ3cVNFQUZhTC9rWGtLcEVCODRiajhTUnBneE5GUmpaM2pEQnlFdmVjWWlwdTYiLCJtYWMiOiJiYTJkZjUwYmUxMTRkZDcwOTBmNDA0MDBmYjg2OTE2MWIzZjMxN2FlZmM1ZWE2ZTkzNjQ1NzI1NmY0N2FhN2MxIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150346.2087
+    'REQUEST_TIME' => 1630150346
+]
+2021-08-28 11:32:28 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '9'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IjRVdEpRMkExMExkclNmQ2x6UmpSZGc9PSIsInZhbHVlIjoiL3FsVm9ZMDlEMlpTdStJZFM3VDFDVE5XQ012N3dYdEdXQUZVaTJZYVhocXQxcnl1eEZFcU1DYUJTOXBtZDFmM245NlBtRnpEeHptZ0JnWWllKytVZjhNVzhhcHVac1g1enVIOWxTV2R2OG9xQk9rNXhaNjFDOEFKSThpc3hhbUciLCJtYWMiOiJhZWNkNjdlODk5ZGIyMTU0Mzk4Nzg1ZTkyMjQ3ZThiMTA3YzM5ZTI3ZDM0MjE3OTg4Mjc1YzMyYzI3NTUwYWJmIn0='
+    'laravel_session' => 'eyJpdiI6ImFNTTMwRTlsaTcxbmRJTlV5K3NkRnc9PSIsInZhbHVlIjoiRkFYZkxCdTQ2aTZyclRXY3hnc3dtdzBNQWd5NW1rdnN0WjFCVTJlWHZMYWVRMTk3elVuQUUxSURaYy90QlBZNjV0L3d0VVp2dGpIS1JrazNJcUR3L1lOcHQ1NTFqRE43S0p6bTZnVThxTS9OTU9hK0EvRGpRSFNDREFSNVQ0aFIiLCJtYWMiOiI3NGMwMzM3MGE5MjdiZTUwMzQyMGNmOGE2NWM4YjFkYzUxYTJhMDVkNjJmMmQ2MmNkNjI3MWRkOTRiMzc1MzQ1In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.1541272
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 4.65588
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 0.829707
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 14.08662
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.3732648
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 4.4273
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 1.9775397
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 37.5765
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0.673735
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 6.01548
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 0.8877788
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 18.40292
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 1.0877984
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 16.34834
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49706'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=9'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=9'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IjRVdEpRMkExMExkclNmQ2x6UmpSZGc9PSIsInZhbHVlIjoiL3FsVm9ZMDlEMlpTdStJZFM3VDFDVE5XQ012N3dYdEdXQUZVaTJZYVhocXQxcnl1eEZFcU1DYUJTOXBtZDFmM245NlBtRnpEeHptZ0JnWWllKytVZjhNVzhhcHVac1g1enVIOWxTV2R2OG9xQk9rNXhaNjFDOEFKSThpc3hhbUciLCJtYWMiOiJhZWNkNjdlODk5ZGIyMTU0Mzk4Nzg1ZTkyMjQ3ZThiMTA3YzM5ZTI3ZDM0MjE3OTg4Mjc1YzMyYzI3NTUwYWJmIn0%3D; laravel_session=eyJpdiI6ImFNTTMwRTlsaTcxbmRJTlV5K3NkRnc9PSIsInZhbHVlIjoiRkFYZkxCdTQ2aTZyclRXY3hnc3dtdzBNQWd5NW1rdnN0WjFCVTJlWHZMYWVRMTk3elVuQUUxSURaYy90QlBZNjV0L3d0VVp2dGpIS1JrazNJcUR3L1lOcHQ1NTFqRE43S0p6bTZnVThxTS9OTU9hK0EvRGpRSFNDREFSNVQ0aFIiLCJtYWMiOiI3NGMwMzM3MGE5MjdiZTUwMzQyMGNmOGE2NWM4YjFkYzUxYTJhMDVkNjJmMmQ2MmNkNjI3MWRkOTRiMzc1MzQ1In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150348.4291
+    'REQUEST_TIME' => 1630150348
+]
+2021-08-28 11:32:30 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '10'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6Imk3VlExaWdkOXlZazA0SVBBNHlPRkE9PSIsInZhbHVlIjoiZ3l2VDcyMGlwUkF0TGR0OE9wV1ZXWThqdEY2QlB0ZmNuNlVWZTFyYjExWWRXVTd3RGZiKzdFVmdtcUdMbVVBeENLNlJqbkJCQU42RXJxQzZ6ZEY0aFNDdExWVVRRZEpHWW9XZnVsWjhuKzNmZUsyY2kyL0ZTK1dtVFpqMzRUNjkiLCJtYWMiOiIwYzkyMDM3OWU3NjZjZDk4MDcyMDkxNDEwMzI0OWVhN2UzMjZmMWI2MGU1ZWExZWFmODNjMTUzY2ViZDM5NDk3In0='
+    'laravel_session' => 'eyJpdiI6Ii90VXF3MERnV3BNUGNBVGFzbVMvcXc9PSIsInZhbHVlIjoic3lrVy82Yzl2eDE3ZEQ2TzlPL2NZY2VxNGxzNUdjcFVHMW9vVHlKKzJ5ajAwTU9aVmJ2ZlhjN2JyL0ZzdkVnNUUraFZidEgzdnJaL1RScWN6U0dpUVNlT0NBTjkxN2tRa04xVGdMNHZ0S1FRSGpOQTNtWWN1WWhSbkIxY01MNXQiLCJtYWMiOiI3NDY2Nzg0MWUxOGZlMWUwNTZkNjZmYTg5MDU4M2NhODFjMzg2NTc2ZDUxYzQyOGMwNWZkMDliNTM4NDA5ZTgyIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.2508863
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 7.75716
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 1.0540992
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 18.78064
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.4680007
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 5.53288
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 2.5799758
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 50.09849
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0.8076092
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 7.51876
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 1.0758448
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 23.0025
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 1.4574404
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 21.79664
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54510'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=10'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=10'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6Imk3VlExaWdkOXlZazA0SVBBNHlPRkE9PSIsInZhbHVlIjoiZ3l2VDcyMGlwUkF0TGR0OE9wV1ZXWThqdEY2QlB0ZmNuNlVWZTFyYjExWWRXVTd3RGZiKzdFVmdtcUdMbVVBeENLNlJqbkJCQU42RXJxQzZ6ZEY0aFNDdExWVVRRZEpHWW9XZnVsWjhuKzNmZUsyY2kyL0ZTK1dtVFpqMzRUNjkiLCJtYWMiOiIwYzkyMDM3OWU3NjZjZDk4MDcyMDkxNDEwMzI0OWVhN2UzMjZmMWI2MGU1ZWExZWFmODNjMTUzY2ViZDM5NDk3In0%3D; laravel_session=eyJpdiI6Ii90VXF3MERnV3BNUGNBVGFzbVMvcXc9PSIsInZhbHVlIjoic3lrVy82Yzl2eDE3ZEQ2TzlPL2NZY2VxNGxzNUdjcFVHMW9vVHlKKzJ5ajAwTU9aVmJ2ZlhjN2JyL0ZzdkVnNUUraFZidEgzdnJaL1RScWN6U0dpUVNlT0NBTjkxN2tRa04xVGdMNHZ0S1FRSGpOQTNtWWN1WWhSbkIxY01MNXQiLCJtYWMiOiI3NDY2Nzg0MWUxOGZlMWUwNTZkNjZmYTg5MDU4M2NhODFjMzg2NTc2ZDUxYzQyOGMwNWZkMDliNTM4NDA5ZTgyIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150350.7575
+    'REQUEST_TIME' => 1630150350
+]
+2021-08-28 11:32:33 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '11'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6ImZETHBHQVpJOFpFMnpOZ0NUMzRTK1E9PSIsInZhbHVlIjoib3BTVUtkU1ZEb0FLUktFTjRZaDZ4VmJBZjIxa1FvcHQzSjh1c29YazYwdWUrNlRiTFpzdHFZMkZIZkhZVCtOekIwKzVmYVZwekNMVk9XaFVXeVlwZk1RcjQvaVJhbHU3UVFKVjdCRUdvVEVoSE5ITE5yWVgrczlSTUU4UjRLWTciLCJtYWMiOiJmNzlkODA2YzcxM2M1MjI2ZmYyNThhMmI3MzQwZWJmM2I5OGNkZTE2NTU3ZmRhYTcyNDhlNDU4ZDFiMDQ0YzI0In0='
+    'laravel_session' => 'eyJpdiI6ImlhRC92ZW9VTjJTSWdPV29BQkV6UFE9PSIsInZhbHVlIjoiQ0NsVnUwRTUrZWlySUdoSzErSWwxS1MvZHdhQU1MZUxUcWY1ODMwYWVZQldobFBDY1ZwVVNHeS9QOEFmdFhzb1JoR2hPNDREQjliWit5OW1iUk9QZFIvWk1pVWg0aWdUeDR5RldjTTB2dFFUMElTU0RoanF4MEJOOVBYTGVGSWEiLCJtYWMiOiI4YzNiYmVmZjg4NjBjOTg5OTQzZDVlNjQ0NmExYmY1ZmEyZmNlMDhhMzU0M2VhYTI2NjM0YmZjMDk5NTY3MzlhIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.2953702
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 9.3078
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 1.2433933
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 23.47466
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.5234447
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 6.63846
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 3.0745759
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 62.62049
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0.8939611
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 9.02204
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 1.2891417
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 27.60208
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 1.9084265
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 27.24494
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50302'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=11'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=11'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=10'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6ImZETHBHQVpJOFpFMnpOZ0NUMzRTK1E9PSIsInZhbHVlIjoib3BTVUtkU1ZEb0FLUktFTjRZaDZ4VmJBZjIxa1FvcHQzSjh1c29YazYwdWUrNlRiTFpzdHFZMkZIZkhZVCtOekIwKzVmYVZwekNMVk9XaFVXeVlwZk1RcjQvaVJhbHU3UVFKVjdCRUdvVEVoSE5ITE5yWVgrczlSTUU4UjRLWTciLCJtYWMiOiJmNzlkODA2YzcxM2M1MjI2ZmYyNThhMmI3MzQwZWJmM2I5OGNkZTE2NTU3ZmRhYTcyNDhlNDU4ZDFiMDQ0YzI0In0%3D; laravel_session=eyJpdiI6ImlhRC92ZW9VTjJTSWdPV29BQkV6UFE9PSIsInZhbHVlIjoiQ0NsVnUwRTUrZWlySUdoSzErSWwxS1MvZHdhQU1MZUxUcWY1ODMwYWVZQldobFBDY1ZwVVNHeS9QOEFmdFhzb1JoR2hPNDREQjliWit5OW1iUk9QZFIvWk1pVWg0aWdUeDR5RldjTTB2dFFUMElTU0RoanF4MEJOOVBYTGVGSWEiLCJtYWMiOiI4YzNiYmVmZjg4NjBjOTg5OTQzZDVlNjQ0NmExYmY1ZmEyZmNlMDhhMzU0M2VhYTI2NjM0YmZjMDk5NTY3MzlhIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150353.1578
+    'REQUEST_TIME' => 1630150353
+]
+2021-08-28 11:32:36 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '12'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6Ik55Ym1FSGJoUC94Z0ZEVDlsOVE1NEE9PSIsInZhbHVlIjoiNWZPZ2xyUHc2OS8rTFYyRlFJZDBldkZFOElpVkN1d1Aza1BLblhnUFphSU9CL1J0SjFHcjA1MktkNEU3VG9BQXU0MGhpTGgzcHhtOCtrWmY1d3MvZWlRT2RjSnIyNXRqY25veE5EOTRpSkxWNGJOSGFUK2tPUVNHQTZJSUhDTHkiLCJtYWMiOiJjMWU3ZTFkNjRmMzEwNmU5NTUzNmI5NzRjM2U2NGE5NDliZmY2MWFjMGZlMzI1NWQyMWQyMzMwZWIzZjUwMmU1In0='
+    'laravel_session' => 'eyJpdiI6ImQzUTVSRWt4RVdMR0dwTUhhWVBJVWc9PSIsInZhbHVlIjoicktJUm9lbGE5SXptRDl0RHJGRXNGbVZaeUtrdXpKeFJZOGM1VVhzZ24rVXNUM2ZUZnhzRHd2N3FORUtQZThRR2s2T3F0ZWRLYWxsa0hoK3RWcjYxQVIxR1Zxd3pTZU16dnZVWEVIYUQ1VVVwd3JzaVViV3duWUh1dW14a1ViK2YiLCJtYWMiOiI1Mjg3NGYxNzQxYTZjNTVjYmYxODhiNzkxZjRjZTQyOGE1N2YyMjdmMDgyMjdlMzVjOWIyZjMxNjQyYzAwNjNhIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.3436621
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 10.85844
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 1.7175675
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 32.8627
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.5946846
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 7.74404
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 3.6119089
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 75.14249
+    'BENCHMARK_TIME_DATA_SUM_slim' => 1.0015003
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 10.52532
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 1.4765246
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 32.20166
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 2.3018875
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 32.69324
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57457'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=12'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=12'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=11'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6Ik55Ym1FSGJoUC94Z0ZEVDlsOVE1NEE9PSIsInZhbHVlIjoiNWZPZ2xyUHc2OS8rTFYyRlFJZDBldkZFOElpVkN1d1Aza1BLblhnUFphSU9CL1J0SjFHcjA1MktkNEU3VG9BQXU0MGhpTGgzcHhtOCtrWmY1d3MvZWlRT2RjSnIyNXRqY25veE5EOTRpSkxWNGJOSGFUK2tPUVNHQTZJSUhDTHkiLCJtYWMiOiJjMWU3ZTFkNjRmMzEwNmU5NTUzNmI5NzRjM2U2NGE5NDliZmY2MWFjMGZlMzI1NWQyMWQyMzMwZWIzZjUwMmU1In0%3D; laravel_session=eyJpdiI6ImQzUTVSRWt4RVdMR0dwTUhhWVBJVWc9PSIsInZhbHVlIjoicktJUm9lbGE5SXptRDl0RHJGRXNGbVZaeUtrdXpKeFJZOGM1VVhzZ24rVXNUM2ZUZnhzRHd2N3FORUtQZThRR2s2T3F0ZWRLYWxsa0hoK3RWcjYxQVIxR1Zxd3pTZU16dnZVWEVIYUQ1VVVwd3JzaVViV3duWUh1dW14a1ViK2YiLCJtYWMiOiI1Mjg3NGYxNzQxYTZjNTVjYmYxODhiNzkxZjRjZTQyOGE1N2YyMjdmMDgyMjdlMzVjOWIyZjMxNjQyYzAwNjNhIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150356.0693
+    'REQUEST_TIME' => 1630150356
+]
+2021-08-28 11:32:37 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '13'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6ImFMZ0xqN05LYzBtdlRaTTl5SDQzdUE9PSIsInZhbHVlIjoiLzB2V3NFYll1bE40cXdhL2o1MnRwaG1NSHBlTjZoMk5KbVVuS1V3NFlMUjhSQ3lzd015a3VianhZT1RrSzhyZDc3WGhIR1MxT0pyM01NbWRVOUI3aSt5NzNKMHM0SVZYeDBVWkpEaGs5alNQM1hjN1ZwSG5wWDB4SitxVEdWcXYiLCJtYWMiOiJmZWY4YmUwOGY5Njk2YTJiMWIzMGE3YWQ0YzE0OTI3ZTVjY2NjOGQ0NjcwMjQ2ZDEzY2I1NjUzZTMzNTRhOTM2In0='
+    'laravel_session' => 'eyJpdiI6IlM5ZDgwemEzVDNjN3hnbGtmbUhyVHc9PSIsInZhbHVlIjoiQkdEZU40cGZsYkUzYTQwUGJ1Y2VlcXJieHIyNUtRKzNXd2FRd0s3bjFoenhsUEpkc3dsOWFmSUthczltVEZpeW9aVnJUQnQ0QlM1aTZEZFF4Q0hnVk5LcndJK2lGbUR4ZEMrVXpacHZQeklwQUtxTjJCbjN2Tlhoa041bExpak8iLCJtYWMiOiIwMTQ5OWIxOTM1NTY2MTkyZDRiNmQ2OGQ0ZGRjM2YyYTZhNTc5MzI1MWUwYjMwODJhOGYxNDY2NDJjZWI4Y2RmIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.389155
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 12.40908
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 1.7175675
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 32.8627
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.6492605
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 8.84962
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 4.1061058
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 87.66449
+    'BENCHMARK_TIME_DATA_SUM_slim' => 1.1114494
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 12.0286
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 1.6318047
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 36.80124
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 2.5787454
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 38.14154
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52963'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=13'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=13'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=12'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6ImFMZ0xqN05LYzBtdlRaTTl5SDQzdUE9PSIsInZhbHVlIjoiLzB2V3NFYll1bE40cXdhL2o1MnRwaG1NSHBlTjZoMk5KbVVuS1V3NFlMUjhSQ3lzd015a3VianhZT1RrSzhyZDc3WGhIR1MxT0pyM01NbWRVOUI3aSt5NzNKMHM0SVZYeDBVWkpEaGs5alNQM1hjN1ZwSG5wWDB4SitxVEdWcXYiLCJtYWMiOiJmZWY4YmUwOGY5Njk2YTJiMWIzMGE3YWQ0YzE0OTI3ZTVjY2NjOGQ0NjcwMjQ2ZDEzY2I1NjUzZTMzNTRhOTM2In0%3D; laravel_session=eyJpdiI6IlM5ZDgwemEzVDNjN3hnbGtmbUhyVHc9PSIsInZhbHVlIjoiQkdEZU40cGZsYkUzYTQwUGJ1Y2VlcXJieHIyNUtRKzNXd2FRd0s3bjFoenhsUEpkc3dsOWFmSUthczltVEZpeW9aVnJUQnQ0QlM1aTZEZFF4Q0hnVk5LcndJK2lGbUR4ZEMrVXpacHZQeklwQUtxTjJCbjN2Tlhoa041bExpak8iLCJtYWMiOiIwMTQ5OWIxOTM1NTY2MTkyZDRiNmQ2OGQ0ZGRjM2YyYTZhNTc5MzI1MWUwYjMwODJhOGYxNDY2NDJjZWI4Y2RmIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150357.7337
+    'REQUEST_TIME' => 1630150357
+]
+2021-08-28 11:32:40 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '14'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IjVYWHFWTXpSOTlWOFdjSTZ3dFZJUmc9PSIsInZhbHVlIjoieTVjR2tLUmtMTWgrS3NLcFBzRXB0WkhmZzBHY2NCOVUwb2paZEhGdXQzbFJ3SUtvdHlhRWs0NThuU0tJVitwSVVMQllvUmVNbG5SZnhQbGYrdjlIVk1DczhDVnhOclZkcllGSVk2d3oybGxDSm9IUmpOZ2ZLaStEVlFHQ0xQK3AiLCJtYWMiOiIzOTk3NGNiYTE1NzIxZGUwM2RmNGY0MTFjMWFiYzY3ZmZjMWRkNWVmMDUxNGFkOWYxMzgxMGRiYTU2MzRmMTAwIn0='
+    'laravel_session' => 'eyJpdiI6InJsWTFRMEtqSjFrcy9PdVlIUjdlVHc9PSIsInZhbHVlIjoiU1h5TjYyTUJKeURPSEJDbmFkWVdySkovd1pUWDlWamhCTFRndElnSUpqajdIUGJJaHI1NEFvQmcyYVIvdGpRSE0yVnNISDVKUlVWZU95U0xLUjgwOHl4MklVOHQ2a1Y1dFNJQjRwWTBEODVZeDlNNjJaa0prQ2U3Kzc1SWtGWUEiLCJtYWMiOiJkMDdkYTZhNTQ5MTJmMDIyZDMzNDZkMTc2NDg1N2NhZTc1YjgzMWI5MGEyOGFjOTFlYTU3MTg4MzU5ZWMzNTBmIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.4300688
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 13.95972
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 2.0748055
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 42.25074
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.7100816
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 9.9552
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 4.6071718
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 100.18649
+    'BENCHMARK_TIME_DATA_SUM_slim' => 1.2228274
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 13.53188
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 1.7962968
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 41.40082
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 2.8586774
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 43.58984
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50070'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=14'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=14'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=13'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IjVYWHFWTXpSOTlWOFdjSTZ3dFZJUmc9PSIsInZhbHVlIjoieTVjR2tLUmtMTWgrS3NLcFBzRXB0WkhmZzBHY2NCOVUwb2paZEhGdXQzbFJ3SUtvdHlhRWs0NThuU0tJVitwSVVMQllvUmVNbG5SZnhQbGYrdjlIVk1DczhDVnhOclZkcllGSVk2d3oybGxDSm9IUmpOZ2ZLaStEVlFHQ0xQK3AiLCJtYWMiOiIzOTk3NGNiYTE1NzIxZGUwM2RmNGY0MTFjMWFiYzY3ZmZjMWRkNWVmMDUxNGFkOWYxMzgxMGRiYTU2MzRmMTAwIn0%3D; laravel_session=eyJpdiI6InJsWTFRMEtqSjFrcy9PdVlIUjdlVHc9PSIsInZhbHVlIjoiU1h5TjYyTUJKeURPSEJDbmFkWVdySkovd1pUWDlWamhCTFRndElnSUpqajdIUGJJaHI1NEFvQmcyYVIvdGpRSE0yVnNISDVKUlVWZU95U0xLUjgwOHl4MklVOHQ2a1Y1dFNJQjRwWTBEODVZeDlNNjJaa0prQ2U3Kzc1SWtGWUEiLCJtYWMiOiJkMDdkYTZhNTQ5MTJmMDIyZDMzNDZkMTc2NDg1N2NhZTc1YjgzMWI5MGEyOGFjOTFlYTU3MTg4MzU5ZWMzNTBmIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150359.9359
+    'REQUEST_TIME' => 1630150359
+]
+2021-08-28 11:32:41 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '15'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IlBPdDBWeVRYVGdYclY4N29XOWNtdUE9PSIsInZhbHVlIjoiR3p0VVJrQUg0dzdmVC85bGJPTHJ3ZmpBYWQyT002eDZXc3FtOXBkbHRKWGltVnkzV1ZHdDVPQ3p3eVRNWG94dlZ6enVkam5hV3ZibHJ0N1NiR1pPczVOL3VsUXZRUnAvK3VZeXp5Mjd1R2t0UGNWL3ZDWGhNWlB3SVZrblIrUmUiLCJtYWMiOiI1ZGE3MWJhZmEyMjQ2Njg1MTUyYjNiYWY2NTQzN2IyNmNlN2Q0ZWY0ZDNmNGY0MTQyZTQ5ZGIwMjgxMzM2MmRhIn0='
+    'laravel_session' => 'eyJpdiI6IlI4SHpQQWUwREt0NEVGZXEzNHNGWmc9PSIsInZhbHVlIjoiSzk2QmprTGQvUFh0Z09xcHcrcHA5T1J1aHliODBMTVJJWmM1RE56M1d0LzFtUWcxTlJFL05nVmpqYmVIRW1lc0J4Z1RvR3pTZGI2Ky9HNHllOGFkd2pweHRBWDg1blErc1VJRnJFT1N0bXIrUWI2bW1McnRMQ3BEZVovWHBxbEciLCJtYWMiOiIzODI4N2ExYWEyZDNjYjcyYjdmMzdkMTc2YmRhNjZjNmYxZTczNjA4OGQ3ZGE4Zjk5NzMwMTQ3Nzk0NTQ5NGE1In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.4711178
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 15.51036
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 2.0748055
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 42.25074
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.7640686
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 11.06078
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 5.0779269
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 112.70849
+    'BENCHMARK_TIME_DATA_SUM_slim' => 1.3504204
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 15.03516
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 1.9535198
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 46.0004
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 3.1251984
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 49.03814
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55730'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=15'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=15'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=14'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IlBPdDBWeVRYVGdYclY4N29XOWNtdUE9PSIsInZhbHVlIjoiR3p0VVJrQUg0dzdmVC85bGJPTHJ3ZmpBYWQyT002eDZXc3FtOXBkbHRKWGltVnkzV1ZHdDVPQ3p3eVRNWG94dlZ6enVkam5hV3ZibHJ0N1NiR1pPczVOL3VsUXZRUnAvK3VZeXp5Mjd1R2t0UGNWL3ZDWGhNWlB3SVZrblIrUmUiLCJtYWMiOiI1ZGE3MWJhZmEyMjQ2Njg1MTUyYjNiYWY2NTQzN2IyNmNlN2Q0ZWY0ZDNmNGY0MTQyZTQ5ZGIwMjgxMzM2MmRhIn0%3D; laravel_session=eyJpdiI6IlI4SHpQQWUwREt0NEVGZXEzNHNGWmc9PSIsInZhbHVlIjoiSzk2QmprTGQvUFh0Z09xcHcrcHA5T1J1aHliODBMTVJJWmM1RE56M1d0LzFtUWcxTlJFL05nVmpqYmVIRW1lc0J4Z1RvR3pTZGI2Ky9HNHllOGFkd2pweHRBWDg1blErc1VJRnJFT1N0bXIrUWI2bW1McnRMQ3BEZVovWHBxbEciLCJtYWMiOiIzODI4N2ExYWEyZDNjYjcyYjdmMzdkMTc2YmRhNjZjNmYxZTczNjA4OGQ3ZGE4Zjk5NzMwMTQ3Nzk0NTQ5NGE1In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150361.7237
+    'REQUEST_TIME' => 1630150361
+]
+2021-08-28 11:32:44 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '16'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IkNzVkpNZUZVaVpSODBJdkxyeXFnZlE9PSIsInZhbHVlIjoiS25ueWtDdU5HdEMwTzdhTDNYazVaVTlrWFdwRld5aWhHVVBNYXlnNVd2N3l3bS9ZSXRFSXVhT2xQZ2NFaSs5SmZOdG4xZXM2NHRGd2JIS1J0VWt4Mnl4Y25iQjc1QlNUQTVkdzlDR2F3NVBqUEsxdzJLVExHS2hDV3dnZ2pjWmIiLCJtYWMiOiI1ZWZkNmU5NDIxYmIxZDJmMjNkOTE4MmU0MzU5ZjA4MWUzZmQwMzU0ZTY1MDc4OTQ0ZGEyMjhmYmViZTMxZmEzIn0='
+    'laravel_session' => 'eyJpdiI6IlpmRUFodkp2bHo4VEFGQXNweUlrNmc9PSIsInZhbHVlIjoiS1lSVmpTZHFPMDVVNDloVnBMMWdUOWlydnBrV29pQUtKT2xQbzlyVmpKbVl6Ym9jTE5UUGp0YmtVZmtHbmNkdG04Zy9QaEpraEw3OEZZdjcyRU9WdnpDTFg5d2xTazVYakhaVTNmcmU0U2thSDcweE94WGRnVHpHaE1ycEhKVjciLCJtYWMiOiIyMGMxNDg2YzVmMDk0ZjQ5Njg5Y2JjODg3NmVlNmI4YTc5ZjM0MmNkZjFhNWVmZDU1NGM0ZTFlMDJkNjEyNmRlIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.5123227
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 17.061
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 2.4339933
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 51.63878
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.8020506
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 12.16636
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 5.5909579
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 125.23049
+    'BENCHMARK_TIME_DATA_SUM_slim' => 1.4571754
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 16.53844
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 2.1403208
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 50.59998
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 3.3983214
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 54.48644
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57566'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=16'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=16'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=15'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IkNzVkpNZUZVaVpSODBJdkxyeXFnZlE9PSIsInZhbHVlIjoiS25ueWtDdU5HdEMwTzdhTDNYazVaVTlrWFdwRld5aWhHVVBNYXlnNVd2N3l3bS9ZSXRFSXVhT2xQZ2NFaSs5SmZOdG4xZXM2NHRGd2JIS1J0VWt4Mnl4Y25iQjc1QlNUQTVkdzlDR2F3NVBqUEsxdzJLVExHS2hDV3dnZ2pjWmIiLCJtYWMiOiI1ZWZkNmU5NDIxYmIxZDJmMjNkOTE4MmU0MzU5ZjA4MWUzZmQwMzU0ZTY1MDc4OTQ0ZGEyMjhmYmViZTMxZmEzIn0%3D; laravel_session=eyJpdiI6IlpmRUFodkp2bHo4VEFGQXNweUlrNmc9PSIsInZhbHVlIjoiS1lSVmpTZHFPMDVVNDloVnBMMWdUOWlydnBrV29pQUtKT2xQbzlyVmpKbVl6Ym9jTE5UUGp0YmtVZmtHbmNkdG04Zy9QaEpraEw3OEZZdjcyRU9WdnpDTFg5d2xTazVYakhaVTNmcmU0U2thSDcweE94WGRnVHpHaE1ycEhKVjciLCJtYWMiOiIyMGMxNDg2YzVmMDk0ZjQ5Njg5Y2JjODg3NmVlNmI4YTc5ZjM0MmNkZjFhNWVmZDU1NGM0ZTFlMDJkNjEyNmRlIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150363.9233
+    'REQUEST_TIME' => 1630150363
+]
+2021-08-28 11:32:46 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '17'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IkNzVkpNZUZVaVpSODBJdkxyeXFnZlE9PSIsInZhbHVlIjoiS25ueWtDdU5HdEMwTzdhTDNYazVaVTlrWFdwRld5aWhHVVBNYXlnNVd2N3l3bS9ZSXRFSXVhT2xQZ2NFaSs5SmZOdG4xZXM2NHRGd2JIS1J0VWt4Mnl4Y25iQjc1QlNUQTVkdzlDR2F3NVBqUEsxdzJLVExHS2hDV3dnZ2pjWmIiLCJtYWMiOiI1ZWZkNmU5NDIxYmIxZDJmMjNkOTE4MmU0MzU5ZjA4MWUzZmQwMzU0ZTY1MDc4OTQ0ZGEyMjhmYmViZTMxZmEzIn0='
+    'laravel_session' => 'eyJpdiI6IlpmRUFodkp2bHo4VEFGQXNweUlrNmc9PSIsInZhbHVlIjoiS1lSVmpTZHFPMDVVNDloVnBMMWdUOWlydnBrV29pQUtKT2xQbzlyVmpKbVl6Ym9jTE5UUGp0YmtVZmtHbmNkdG04Zy9QaEpraEw3OEZZdjcyRU9WdnpDTFg5d2xTazVYakhaVTNmcmU0U2thSDcweE94WGRnVHpHaE1ycEhKVjciLCJtYWMiOiIyMGMxNDg2YzVmMDk0ZjQ5Njg5Y2JjODg3NmVlNmI4YTc5ZjM0MmNkZjFhNWVmZDU1NGM0ZTFlMDJkNjEyNmRlIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.6891747
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 18.61164
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 2.6586063
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 56.3328
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0.9431706
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 13.27194
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 6.4005051
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 137.75249
+    'BENCHMARK_TIME_DATA_SUM_slim' => 1.7061686
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 18.04172
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 2.3518617
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 55.19956
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 3.7141225
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 59.93474
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55280'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=17'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=17'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=16'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IkNzVkpNZUZVaVpSODBJdkxyeXFnZlE9PSIsInZhbHVlIjoiS25ueWtDdU5HdEMwTzdhTDNYazVaVTlrWFdwRld5aWhHVVBNYXlnNVd2N3l3bS9ZSXRFSXVhT2xQZ2NFaSs5SmZOdG4xZXM2NHRGd2JIS1J0VWt4Mnl4Y25iQjc1QlNUQTVkdzlDR2F3NVBqUEsxdzJLVExHS2hDV3dnZ2pjWmIiLCJtYWMiOiI1ZWZkNmU5NDIxYmIxZDJmMjNkOTE4MmU0MzU5ZjA4MWUzZmQwMzU0ZTY1MDc4OTQ0ZGEyMjhmYmViZTMxZmEzIn0%3D; laravel_session=eyJpdiI6IlpmRUFodkp2bHo4VEFGQXNweUlrNmc9PSIsInZhbHVlIjoiS1lSVmpTZHFPMDVVNDloVnBMMWdUOWlydnBrV29pQUtKT2xQbzlyVmpKbVl6Ym9jTE5UUGp0YmtVZmtHbmNkdG04Zy9QaEpraEw3OEZZdjcyRU9WdnpDTFg5d2xTazVYakhaVTNmcmU0U2thSDcweE94WGRnVHpHaE1ycEhKVjciLCJtYWMiOiIyMGMxNDg2YzVmMDk0ZjQ5Njg5Y2JjODg3NmVlNmI4YTc5ZjM0MmNkZjFhNWVmZDU1NGM0ZTFlMDJkNjEyNmRlIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150366.3793
+    'REQUEST_TIME' => 1630150366
+]
+2021-08-28 11:32:48 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '18'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IlF6MktEK2dpcUt3ODhiV0pIUnNnRkE9PSIsInZhbHVlIjoiRm91c2F1Uk5GVUNwMzVpei9rVzFrUHRaaFMzOGNRTTR2STNqTUcxY3NtdFJiRmhCVlAvY0t2SmRPakxkSlNycVIwWXlvQUR4Qkk0amhBWG03QzJLd2JKWlNYc3BTQVp1UE54WDVFQS9QRXR6eHBJVUxKRElvbEd2SFFlUHVVbjMiLCJtYWMiOiI2MDFiM2U3Mjc2ZGU5Njg2Y2NhODJiMGQzMzU2NzdkZTc4MTZlZjQ0YTNjZGJjMDc2ZjUzNzM0OGEwOTQ5MTk1In0='
+    'laravel_session' => 'eyJpdiI6IklaeFpnYXMwUTI3UEtYNTl4Uno0WXc9PSIsInZhbHVlIjoialJDc0xvbWJjbVRnR1RvY0Y2bXNsbkljY1d1ZTcwRnRVUjh3amwzN3ZwWGJRV0hNR00vVlBxQnFxTi9YK1ZuZXE5QTdzTTlaUW45T3RzbzgrT3ViYkNzdHNqeEtvV3B3WEc0VDJWK3h6eWlaNDlsSm9MOVIvWmZXM0QzQUU1ZWwiLCJtYWMiOiIyNjVkNzM4ZjRiYmUwOTUyZjc5MjJhNWQ5Mjk3ZTI4MGY4Mjg0ZjU5OWE4YzA5MTM1MmYwNmM5NmEzNDc4OGQ2In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.7574578
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 20.16228
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 2.8718174
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 61.02682
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 1.1009076
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 15.48323
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 6.9080582
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 150.27449
+    'BENCHMARK_TIME_DATA_SUM_slim' => 1.9992215
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 21.04828
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 2.5745396
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 59.79926
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 4.0465445
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 65.38304
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '59530'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=18'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=18'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=17'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IlF6MktEK2dpcUt3ODhiV0pIUnNnRkE9PSIsInZhbHVlIjoiRm91c2F1Uk5GVUNwMzVpei9rVzFrUHRaaFMzOGNRTTR2STNqTUcxY3NtdFJiRmhCVlAvY0t2SmRPakxkSlNycVIwWXlvQUR4Qkk0amhBWG03QzJLd2JKWlNYc3BTQVp1UE54WDVFQS9QRXR6eHBJVUxKRElvbEd2SFFlUHVVbjMiLCJtYWMiOiI2MDFiM2U3Mjc2ZGU5Njg2Y2NhODJiMGQzMzU2NzdkZTc4MTZlZjQ0YTNjZGJjMDc2ZjUzNzM0OGEwOTQ5MTk1In0%3D; laravel_session=eyJpdiI6IklaeFpnYXMwUTI3UEtYNTl4Uno0WXc9PSIsInZhbHVlIjoialJDc0xvbWJjbVRnR1RvY0Y2bXNsbkljY1d1ZTcwRnRVUjh3amwzN3ZwWGJRV0hNR00vVlBxQnFxTi9YK1ZuZXE5QTdzTTlaUW45T3RzbzgrT3ViYkNzdHNqeEtvV3B3WEc0VDJWK3h6eWlaNDlsSm9MOVIvWmZXM0QzQUU1ZWwiLCJtYWMiOiIyNjVkNzM4ZjRiYmUwOTUyZjc5MjJhNWQ5Mjk3ZTI4MGY4Mjg0ZjU5OWE4YzA5MTM1MmYwNmM5NmEzNDc4OGQ2In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150368.3757
+    'REQUEST_TIME' => 1630150368
+]
+2021-08-28 11:32:50 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '19'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IlF6MktEK2dpcUt3ODhiV0pIUnNnRkE9PSIsInZhbHVlIjoiRm91c2F1Uk5GVUNwMzVpei9rVzFrUHRaaFMzOGNRTTR2STNqTUcxY3NtdFJiRmhCVlAvY0t2SmRPakxkSlNycVIwWXlvQUR4Qkk0amhBWG03QzJLd2JKWlNYc3BTQVp1UE54WDVFQS9QRXR6eHBJVUxKRElvbEd2SFFlUHVVbjMiLCJtYWMiOiI2MDFiM2U3Mjc2ZGU5Njg2Y2NhODJiMGQzMzU2NzdkZTc4MTZlZjQ0YTNjZGJjMDc2ZjUzNzM0OGEwOTQ5MTk1In0='
+    'laravel_session' => 'eyJpdiI6IklaeFpnYXMwUTI3UEtYNTl4Uno0WXc9PSIsInZhbHVlIjoialJDc0xvbWJjbVRnR1RvY0Y2bXNsbkljY1d1ZTcwRnRVUjh3amwzN3ZwWGJRV0hNR00vVlBxQnFxTi9YK1ZuZXE5QTdzTTlaUW45T3RzbzgrT3ViYkNzdHNqeEtvV3B3WEc0VDJWK3h6eWlaNDlsSm9MOVIvWmZXM0QzQUU1ZWwiLCJtYWMiOiIyNjVkNzM4ZjRiYmUwOTUyZjc5MjJhNWQ5Mjk3ZTI4MGY4Mjg0ZjU5OWE4YzA5MTM1MmYwNmM5NmEzNDc4OGQ2In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0.8238216
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 21.71304
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 3.0945094
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 65.72084
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 1.1834085
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 16.58881
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 7.4841421
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 162.79649
+    'BENCHMARK_TIME_DATA_SUM_slim' => 2.1295213
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 22.55156
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 2.7724265
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 64.39884
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 4.3862025
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 70.83134
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '50353'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=19'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=19'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=18'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IlF6MktEK2dpcUt3ODhiV0pIUnNnRkE9PSIsInZhbHVlIjoiRm91c2F1Uk5GVUNwMzVpei9rVzFrUHRaaFMzOGNRTTR2STNqTUcxY3NtdFJiRmhCVlAvY0t2SmRPakxkSlNycVIwWXlvQUR4Qkk0amhBWG03QzJLd2JKWlNYc3BTQVp1UE54WDVFQS9QRXR6eHBJVUxKRElvbEd2SFFlUHVVbjMiLCJtYWMiOiI2MDFiM2U3Mjc2ZGU5Njg2Y2NhODJiMGQzMzU2NzdkZTc4MTZlZjQ0YTNjZGJjMDc2ZjUzNzM0OGEwOTQ5MTk1In0%3D; laravel_session=eyJpdiI6IklaeFpnYXMwUTI3UEtYNTl4Uno0WXc9PSIsInZhbHVlIjoialJDc0xvbWJjbVRnR1RvY0Y2bXNsbkljY1d1ZTcwRnRVUjh3amwzN3ZwWGJRV0hNR00vVlBxQnFxTi9YK1ZuZXE5QTdzTTlaUW45T3RzbzgrT3ViYkNzdHNqeEtvV3B3WEc0VDJWK3h6eWlaNDlsSm9MOVIvWmZXM0QzQUU1ZWwiLCJtYWMiOiIyNjVkNzM4ZjRiYmUwOTUyZjc5MjJhNWQ5Mjk3ZTI4MGY4Mjg0ZjU5OWE4YzA5MTM1MmYwNmM5NmEzNDc4OGQ2In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150370.1617
+    'REQUEST_TIME' => 1630150370
+]
+2021-08-28 11:32:52 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '20'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6Ill6VlN3alBkWmVna1VLYkFkaUZQcFE9PSIsInZhbHVlIjoiZHJBMS9jYkgzdk1XblBteFoweVRhVzdmV29yR2lTaCtYdEVRMjVxcUt1akFlWFRJRGoxMHlQWkJKTU5uRFlVT0VNUE9VNDFyVTgzU0MwT3ZwVyt5YVo1c2U3S3FTd0Y2dCt5MTEwdDJlQTAzVXM5RVdFWGhMcFlSc1dPbHVVRnciLCJtYWMiOiIxODUxNDMxYmM0YjFlMjJkMjhiMzhhYWM5NTAyYTYyODAwODY5MjhlMTQwMGQ2NjhlYjZlMTZkMjAwYjdhZDNhIn0='
+    'laravel_session' => 'eyJpdiI6IlJNeEFGeURoRFo1TWN2ckJIUlkremc9PSIsInZhbHVlIjoieWpOY0daYVNJNndEY1lVTnA0MTN3cVU3N3dkeU9pd3hkOEdDTkFlZ3gwTFhsL3YrRVhPTTJpalBwbWVhZkw1OE41NFNzWllBVmFQa3JCYWtuSmdQZGVMbmtOMEdrSzZYcHF2TW5DY2oxd25rcUpjRDVxUHlxTXZRYnEyak10SlkiLCJtYWMiOiI0NzQxYmIxNjE0M2YzNDAwNzBjOTE2ZjA0YzFiYzcyY2MzNjAwODIwYjg3ZjE1YTM2MDBhYjBiOTM5N2NjYzQ4In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 1.0040956
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 23.26368
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 3.3145483
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 70.41486
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 1.2600925
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 17.69439
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 8.050293
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 175.31849
+    'BENCHMARK_TIME_DATA_SUM_slim' => 2.2706773
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 24.05484
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 2.9654654
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 68.99842
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 4.7111253
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 76.27964
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63365'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=20'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=20'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=19'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6Ill6VlN3alBkWmVna1VLYkFkaUZQcFE9PSIsInZhbHVlIjoiZHJBMS9jYkgzdk1XblBteFoweVRhVzdmV29yR2lTaCtYdEVRMjVxcUt1akFlWFRJRGoxMHlQWkJKTU5uRFlVT0VNUE9VNDFyVTgzU0MwT3ZwVyt5YVo1c2U3S3FTd0Y2dCt5MTEwdDJlQTAzVXM5RVdFWGhMcFlSc1dPbHVVRnciLCJtYWMiOiIxODUxNDMxYmM0YjFlMjJkMjhiMzhhYWM5NTAyYTYyODAwODY5MjhlMTQwMGQ2NjhlYjZlMTZkMjAwYjdhZDNhIn0%3D; laravel_session=eyJpdiI6IlJNeEFGeURoRFo1TWN2ckJIUlkremc9PSIsInZhbHVlIjoieWpOY0daYVNJNndEY1lVTnA0MTN3cVU3N3dkeU9pd3hkOEdDTkFlZ3gwTFhsL3YrRVhPTTJpalBwbWVhZkw1OE41NFNzWllBVmFQa3JCYWtuSmdQZGVMbmtOMEdrSzZYcHF2TW5DY2oxd25rcUpjRDVxUHlxTXZRYnEyak10SlkiLCJtYWMiOiI0NzQxYmIxNjE0M2YzNDAwNzBjOTE2ZjA0YzFiYzcyY2MzNjAwODIwYjg3ZjE1YTM2MDBhYjBiOTM5N2NjYzQ4In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150371.9953
+    'REQUEST_TIME' => 1630150371
+]
+2021-08-28 11:32:54 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '21'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IlIxTDNwOVhRY1pvZGdQdWZacVNGeHc9PSIsInZhbHVlIjoiNXp1VTJGVWhMQjFsRG5CdGJZZXFIcVZmREJoU09BYW1reXRGczVQSnc0aXRDckxKYSt0ZTRKRXVHQU9wWmEyM004dXR4U3o0aTloamxVQVlmMk52UkF1L29HOVBUWTJzMWs3Y2dxSFQrNEF0VDhFR28vQzJRUnJrNC81QjAxb2UiLCJtYWMiOiJiYTRlZTA2YWY3MzI0ZDlmYWIyYTk5ZmQxOTAwNmE2MDUzMTVlNzdlMWQxYjM4NGE4NDQ2NzQzNzViZTAyOTg0In0='
+    'laravel_session' => 'eyJpdiI6IlZwekR3ekhLSGZIdzZsTHp2c3kvT2c9PSIsInZhbHVlIjoiL1FvSThUNkhDVUNPMnBGTkdKcTdjTElXbjBDRVkvcnVENEZWQ3pMVDZUeFVrOG9laFFKNlF3QUhxTmdTeldlZjVhTnZyaGNoWUZBa00vdEh6UGRXdzVWVXl1YXM2SjFLLzNzMkc4U3NuV290K1pKRmZxMHdTRy9WY2R3WUkzbVkiLCJtYWMiOiI1MmZhNDRiZjc4MzcwNTlmZmI1ZWFiMzJkOGE5YjhhZWY1OTE2ZjNkYmI4ZTIzNzBiYmFmMjcxZjAyMzE5NzJmIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 1.1221479
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 26.36496
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 3.5744071
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 75.10888
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 1.3550415
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 18.79997
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 8.715806
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 187.84049
+    'BENCHMARK_TIME_DATA_SUM_slim' => 2.4371803
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 25.55812
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 3.2120934
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 73.598
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 5.0976903
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 81.72794
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49680'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=21'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=21'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=20'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IlIxTDNwOVhRY1pvZGdQdWZacVNGeHc9PSIsInZhbHVlIjoiNXp1VTJGVWhMQjFsRG5CdGJZZXFIcVZmREJoU09BYW1reXRGczVQSnc0aXRDckxKYSt0ZTRKRXVHQU9wWmEyM004dXR4U3o0aTloamxVQVlmMk52UkF1L29HOVBUWTJzMWs3Y2dxSFQrNEF0VDhFR28vQzJRUnJrNC81QjAxb2UiLCJtYWMiOiJiYTRlZTA2YWY3MzI0ZDlmYWIyYTk5ZmQxOTAwNmE2MDUzMTVlNzdlMWQxYjM4NGE4NDQ2NzQzNzViZTAyOTg0In0%3D; laravel_session=eyJpdiI6IlZwekR3ekhLSGZIdzZsTHp2c3kvT2c9PSIsInZhbHVlIjoiL1FvSThUNkhDVUNPMnBGTkdKcTdjTElXbjBDRVkvcnVENEZWQ3pMVDZUeFVrOG9laFFKNlF3QUhxTmdTeldlZjVhTnZyaGNoWUZBa00vdEh6UGRXdzVWVXl1YXM2SjFLLzNzMkc4U3NuV290K1pKRmZxMHdTRy9WY2R3WUkzbVkiLCJtYWMiOiI1MmZhNDRiZjc4MzcwNTlmZmI1ZWFiMzJkOGE5YjhhZWY1OTE2ZjNkYmI4ZTIzNzBiYmFmMjcxZjAyMzE5NzJmIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150374.0368
+    'REQUEST_TIME' => 1630150374
+]
+2021-08-28 11:32:55 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '22'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IlQ4MDN0Ums1YWpSNHRvamlQN3BqdHc9PSIsInZhbHVlIjoiMVNKR2hSYjk1OGtDby8vVnV6d0puTGNJZWY5aWhydHY0L05LNURTM0dFRFNmM1dSY0lzNjE1d1ZyUDRHNGErR2hERFR6dE5DSHlFYTlxUUVrREhvWU1NdWRIaW5rZ09uZktDQ2QrSWhoeDBNWUhIYVpqaTJQUXIydU0wYW1hSUYiLCJtYWMiOiIxYjI2MGU5NjIzNzgyMGI1N2YwNDU3NjFlOTU5NDdlOWY3NTNjYTk3OWM1ZmRkNjBjZWU5YWZmYzE3M2Q4YzhkIn0='
+    'laravel_session' => 'eyJpdiI6IjEvNGkybmVmS3cvSG1EREdwb2N2VEE9PSIsInZhbHVlIjoiQTBJUk0zNE1nM0hkNnNHdkRzeU05M3NhRHM3YUJUZjZCY3l2ME9heHhObkR3bEdtMkg0Mnh5TGU3cTh0WWlmRHM4dS9YcCt5YVNMdUh3cW9Xc0JxR0FLdnM5S0pEaUhlYjJkWTlYelRrNHY2YndlRnNEa1Z0bllVUGNiNTh1b1EiLCJtYWMiOiJiMTdmY2RmNTljYTQwZWFjMDExNDFjNzZhMzg3ZmRlZTRlOTRhYjg4ZmU2YmYxZWQ3NGE4MDk2MGYzNTBjZGZmIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 1.1820339
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 27.9156
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 3.7853811
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 79.8029
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 1.4295764
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 19.90555
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 9.267705
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 200.36249
+    'BENCHMARK_TIME_DATA_SUM_slim' => 2.5892854
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 27.0614
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 3.4005833
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 78.1977
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 5.4363172
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 87.17624
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '59079'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=22'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=22'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=21'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IlQ4MDN0Ums1YWpSNHRvamlQN3BqdHc9PSIsInZhbHVlIjoiMVNKR2hSYjk1OGtDby8vVnV6d0puTGNJZWY5aWhydHY0L05LNURTM0dFRFNmM1dSY0lzNjE1d1ZyUDRHNGErR2hERFR6dE5DSHlFYTlxUUVrREhvWU1NdWRIaW5rZ09uZktDQ2QrSWhoeDBNWUhIYVpqaTJQUXIydU0wYW1hSUYiLCJtYWMiOiIxYjI2MGU5NjIzNzgyMGI1N2YwNDU3NjFlOTU5NDdlOWY3NTNjYTk3OWM1ZmRkNjBjZWU5YWZmYzE3M2Q4YzhkIn0%3D; laravel_session=eyJpdiI6IjEvNGkybmVmS3cvSG1EREdwb2N2VEE9PSIsInZhbHVlIjoiQTBJUk0zNE1nM0hkNnNHdkRzeU05M3NhRHM3YUJUZjZCY3l2ME9heHhObkR3bEdtMkg0Mnh5TGU3cTh0WWlmRHM4dS9YcCt5YVNMdUh3cW9Xc0JxR0FLdnM5S0pEaUhlYjJkWTlYelRrNHY2YndlRnNEa1Z0bllVUGNiNTh1b1EiLCJtYWMiOiJiMTdmY2RmNTljYTQwZWFjMDExNDFjNzZhMzg3ZmRlZTRlOTRhYjg4ZmU2YmYxZWQ3NGE4MDk2MGYzNTBjZGZmIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150375.7803
+    'REQUEST_TIME' => 1630150375
+]
+2021-08-28 11:32:57 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '23'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IlFhWllNUllOVEdCYnpzTmZWSzFYc0E9PSIsInZhbHVlIjoibXB0TEJoV1J6ZE01YmhLZitibWpMeEFrNFdQMFZpQzJ5UDNxYlNhTUhpZTM5dXMzSWV0OXgraXB5NG9OcnNRN3BvR3hUSy9nTDFWWVJ4SCtGekxmTUVZenQxdm0wRitJQ0ozZ0pGVE1FQkY3anJ1ZzkvUG5tQkVuTkRyczhhUHoiLCJtYWMiOiI1NDVkMTE1NzhiNmUxYmIyMzkyYTljNjU3OTBjMGQ3YzFhMTdkNmRkZmE5ZGYxMjc1NWUzZmRkM2Q3ZDNhZDAzIn0='
+    'laravel_session' => 'eyJpdiI6IkV6NDZKaGVLOVdkMjkrdTZsejNxMWc9PSIsInZhbHVlIjoidm8wdFJqQlJGc2VSL1dHRVl5SFZablRSb1lZL052eEdGNGw1ZGQ2eVBzWllpNXJMYldYREtidHJYUkQ2WWNaaURhN1VEeTI5bUJwcFpqZUloZjVYMVVJd0RBU1dRZUk4K3ppTDk5Nmx3dkdZRjVCZGp4MXdSTDlCSG1rSmRyRDYiLCJtYWMiOiJiOGI2OGE5ZWI2ODkxN2U5ZjJmMDg2ZmE5OWRkOTVmN2FhYWQzOGVlZTk2YmYzMDQwY2MxZGNmNDNhNzAzZGU4In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 1.241325
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 29.46636
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 3.999413
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 84.49692
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 1.5009263
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 21.01126
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 9.8204229
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 212.88462
+    'BENCHMARK_TIME_DATA_SUM_slim' => 2.7506066
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 28.5648
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 3.6241532
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 82.7974
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 5.7635693
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 92.62454
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60667'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=23'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=23'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=22'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IlFhWllNUllOVEdCYnpzTmZWSzFYc0E9PSIsInZhbHVlIjoibXB0TEJoV1J6ZE01YmhLZitibWpMeEFrNFdQMFZpQzJ5UDNxYlNhTUhpZTM5dXMzSWV0OXgraXB5NG9OcnNRN3BvR3hUSy9nTDFWWVJ4SCtGekxmTUVZenQxdm0wRitJQ0ozZ0pGVE1FQkY3anJ1ZzkvUG5tQkVuTkRyczhhUHoiLCJtYWMiOiI1NDVkMTE1NzhiNmUxYmIyMzkyYTljNjU3OTBjMGQ3YzFhMTdkNmRkZmE5ZGYxMjc1NWUzZmRkM2Q3ZDNhZDAzIn0%3D; laravel_session=eyJpdiI6IkV6NDZKaGVLOVdkMjkrdTZsejNxMWc9PSIsInZhbHVlIjoidm8wdFJqQlJGc2VSL1dHRVl5SFZablRSb1lZL052eEdGNGw1ZGQ2eVBzWllpNXJMYldYREtidHJYUkQ2WWNaaURhN1VEeTI5bUJwcFpqZUloZjVYMVVJd0RBU1dRZUk4K3ppTDk5Nmx3dkdZRjVCZGp4MXdSTDlCSG1rSmRyRDYiLCJtYWMiOiJiOGI2OGE5ZWI2ODkxN2U5ZjJmMDg2ZmE5OWRkOTVmN2FhYWQzOGVlZTk2YmYzMDQwY2MxZGNmNDNhNzAzZGU4In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150377.4776
+    'REQUEST_TIME' => 1630150377
+]
+2021-08-28 11:32:59 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:32:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '24'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6IlFhWllNUllOVEdCYnpzTmZWSzFYc0E9PSIsInZhbHVlIjoibXB0TEJoV1J6ZE01YmhLZitibWpMeEFrNFdQMFZpQzJ5UDNxYlNhTUhpZTM5dXMzSWV0OXgraXB5NG9OcnNRN3BvR3hUSy9nTDFWWVJ4SCtGekxmTUVZenQxdm0wRitJQ0ozZ0pGVE1FQkY3anJ1ZzkvUG5tQkVuTkRyczhhUHoiLCJtYWMiOiI1NDVkMTE1NzhiNmUxYmIyMzkyYTljNjU3OTBjMGQ3YzFhMTdkNmRkZmE5ZGYxMjc1NWUzZmRkM2Q3ZDNhZDAzIn0='
+    'laravel_session' => 'eyJpdiI6IkV6NDZKaGVLOVdkMjkrdTZsejNxMWc9PSIsInZhbHVlIjoidm8wdFJqQlJGc2VSL1dHRVl5SFZablRSb1lZL052eEdGNGw1ZGQ2eVBzWllpNXJMYldYREtidHJYUkQ2WWNaaURhN1VEeTI5bUJwcFpqZUloZjVYMVVJd0RBU1dRZUk4K3ppTDk5Nmx3dkdZRjVCZGp4MXdSTDlCSG1rSmRyRDYiLCJtYWMiOiJiOGI2OGE5ZWI2ODkxN2U5ZjJmMDg2ZmE5OWRkOTVmN2FhYWQzOGVlZTk2YmYzMDQwY2MxZGNmNDNhNzAzZGU4In0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 0
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 4.2195129
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 89.19094
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 0
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 10.3500569
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 225.40662
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 0
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 3.8346682
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 87.39698
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 6.0957362
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 98.07284
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '61171'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=24'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=24'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=23'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6IlFhWllNUllOVEdCYnpzTmZWSzFYc0E9PSIsInZhbHVlIjoibXB0TEJoV1J6ZE01YmhLZitibWpMeEFrNFdQMFZpQzJ5UDNxYlNhTUhpZTM5dXMzSWV0OXgraXB5NG9OcnNRN3BvR3hUSy9nTDFWWVJ4SCtGekxmTUVZenQxdm0wRitJQ0ozZ0pGVE1FQkY3anJ1ZzkvUG5tQkVuTkRyczhhUHoiLCJtYWMiOiI1NDVkMTE1NzhiNmUxYmIyMzkyYTljNjU3OTBjMGQ3YzFhMTdkNmRkZmE5ZGYxMjc1NWUzZmRkM2Q3ZDNhZDAzIn0%3D; laravel_session=eyJpdiI6IkV6NDZKaGVLOVdkMjkrdTZsejNxMWc9PSIsInZhbHVlIjoidm8wdFJqQlJGc2VSL1dHRVl5SFZablRSb1lZL052eEdGNGw1ZGQ2eVBzWllpNXJMYldYREtidHJYUkQ2WWNaaURhN1VEeTI5bUJwcFpqZUloZjVYMVVJd0RBU1dRZUk4K3ppTDk5Nmx3dkdZRjVCZGp4MXdSTDlCSG1rSmRyRDYiLCJtYWMiOiJiOGI2OGE5ZWI2ODkxN2U5ZjJmMDg2ZmE5OWRkOTVmN2FhYWQzOGVlZTk2YmYzMDQwY2MxZGNmNDNhNzAzZGU4In0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150379.2191
+    'REQUEST_TIME' => 1630150379
+]
+2021-08-28 11:33:00 [127.0.0.1][-][-][warning][yii\web\Session::init] Session is already started
+2021-08-28 11:33:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'number' => '25'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i145bda7uea7fcb9ja88lv3tul'
+    '_csrf' => '6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6InMzR2dCN09kayt0dGR5M3dYYXZjdmc9PSIsInZhbHVlIjoiQWYzbnpybXJObzZGZGltNmw3NFNzWEVsSy9HcTBmOXdrSmZZcUFLd2VaMlF6emYzUVgzYjI0cGwyZW9JUVQ4S1VDTHVZRFZJeDJsNERoaDdFbDgwYnJjNmQ4aHo3Tll3M1kzemdiMjMvNXZWbHJhb3A4YkFKSXBYbTF0clJ2M2EiLCJtYWMiOiI0MWM4YTIwZWM5ZWU5Mjk3OWYzNGJjNDllNjEyMzhkNDBlYzhiOTEzNGJlZTE1MmNlN2ZkNzAyNWQ0YjE4YTY0In0='
+    'laravel_session' => 'eyJpdiI6ImJOSHN0cXdnN2Y0Ti9rYWlORDRPUnc9PSIsInZhbHVlIjoiSTYrbmppN1JuQS9QVlFBMjRFVGhhaWZoVmxsY0d4N3RNTU94Uk5DWVVyTFZ1cGVkVTF2RjZ0NUJ2aUk2VmFZZXROazlnYVRpUzc2a2pyZ3hqUG5PSmFZYVJwTVhLK3JUTzVTQ0ZSNDFNajNQa0Y2WGhCS1NnSXdQb2tRS1V6NmciLCJtYWMiOiIxMGVmNmUzYjgzNDhhNTBmMjFiMjkwMTExYzRkMWQxNmRiMzc1NGE2ZGVjZTAxNDJlNTgwZjNhOGFhMWM3ODhkIn0='
+]
+
+$_SESSION = [
+    'BENCHMARK_TIME_DATA_SUM_' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_' => 0
+    'BENCHMARK_TIME_DATA_SUM_fatfree' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_fatfree' => 0
+    'BENCHMARK_TIME_DATA_SUM_lumen' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_lumen' => 0
+    'BENCHMARK_TIME_DATA_SUM_hleb' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_hleb' => 0
+    'BENCHMARK_TIME_DATA_SUM_laravel' => 10.8860128
+    'BENCHMARK_MEMORY_DATA_SUM_laravel' => 237.92862
+    'BENCHMARK_TIME_DATA_SUM_slim' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_slim' => 0
+    '__flash' => []
+    'BENCHMARK_TIME_DATA_SUM_yii2' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_yii2' => 0
+    'BENCHMARK_TIME_DATA_SUM_symfony' => 6.4265982
+    'BENCHMARK_MEMORY_DATA_SUM_symfony' => 103.52114
+    'BENCHMARK_TIME_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+    'BENCHMARK_MEMORY_DATA_SUM_BENCHMARK_FRAMEWORK_NAME' => 0
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\web\\origin-php-framework-benchmarks'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '61589'
+    'SERVER_SOFTWARE' => 'PHP 7.3.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8000'
+    'REQUEST_URI' => '/yii2/web/index.php/hello/index/?number=25'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/yii2/web/index.php'
+    'SCRIPT_FILENAME' => 'D:\\web\\origin-php-framework-benchmarks\\yii2\\web\\index.php'
+    'PATH_INFO' => '/hello/index/'
+    'PHP_SELF' => '/yii2/web/index.php/hello/index/'
+    'QUERY_STRING' => 'number=25'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8000/yii2/web/index.php/hello/index/?number=24'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=i145bda7uea7fcb9ja88lv3tul; _csrf=6b9269731a8a5671ed3590d42fd9a5aa5436b6bca8aee9b408ffe61ad1aead68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gwfJsgj-LjZO4LKPlBe0y4K20lq4Fw2_%22%3B%7D; XSRF-TOKEN=eyJpdiI6InMzR2dCN09kayt0dGR5M3dYYXZjdmc9PSIsInZhbHVlIjoiQWYzbnpybXJObzZGZGltNmw3NFNzWEVsSy9HcTBmOXdrSmZZcUFLd2VaMlF6emYzUVgzYjI0cGwyZW9JUVQ4S1VDTHVZRFZJeDJsNERoaDdFbDgwYnJjNmQ4aHo3Tll3M1kzemdiMjMvNXZWbHJhb3A4YkFKSXBYbTF0clJ2M2EiLCJtYWMiOiI0MWM4YTIwZWM5ZWU5Mjk3OWYzNGJjNDllNjEyMzhkNDBlYzhiOTEzNGJlZTE1MmNlN2ZkNzAyNWQ0YjE4YTY0In0%3D; laravel_session=eyJpdiI6ImJOSHN0cXdnN2Y0Ti9rYWlORDRPUnc9PSIsInZhbHVlIjoiSTYrbmppN1JuQS9QVlFBMjRFVGhhaWZoVmxsY0d4N3RNTU94Uk5DWVVyTFZ1cGVkVTF2RjZ0NUJ2aUk2VmFZZXROazlnYVRpUzc2a2pyZ3hqUG5PSmFZYVJwTVhLK3JUTzVTQ0ZSNDFNajNQa0Y2WGhCS1NnSXdQb2tRS1V6NmciLCJtYWMiOiIxMGVmNmUzYjgzNDhhNTBmMjFiMjkwMTExYzRkMWQxNmRiMzc1NGE2ZGVjZTAxNDJlNTgwZjNhOGFhMWM3ODhkIn0%3D'
+    'REQUEST_TIME_FLOAT' => 1630150380.7289
+    'REQUEST_TIME' => 1630150380
+]
