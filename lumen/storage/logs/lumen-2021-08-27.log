@@ -1,0 +1,5 @@
+[2021-08-27 06:51:17] local.ERROR: Call to undefined function a() {"exception":"[object] (Error(code: 0): Call to undefined function a() at /home/MAIN/php-framework-benchmarks-main/benchmark_src/PhpFrameworkBenchmark.php:32)
+[stacktrace]
+#0 /home/MAIN/php-framework-benchmarks-main/lumen/public/index.php(37): PhpFrameworkBenchmark->end()
+#1 {main}
+"} 
