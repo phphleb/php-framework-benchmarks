@@ -1,0 +1,5 @@
+{
+  "name": "php-framework-benchmarks",
+  "version": "1.0.0",
+  "frameworks": ["phalcon", "fat-free", "hleb", "slim", "yii2", "lumen", "symfony","laravel"]
+}

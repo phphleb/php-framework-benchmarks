@@ -1,0 +1,8 @@
+{
+  "name": "Fat-free",
+  "mark": "fatfree",
+  "version": "3.7.3",
+  "url": "https://fatfreeframework.com/3.7/home",
+  "hello_world_uri": "/fat-free/public_html/hello",
+  "public_html_path": "/public_html/"
+}

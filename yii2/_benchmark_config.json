@@ -1,0 +1,8 @@
+{
+  "name": "Yii2",
+  "mark": "yii2",
+  "url": "https://www.yiiframework.com/doc/guide/2.0/en",
+  "version": "2.0.43",
+  "hello_world_uri": "/yii2/web/index.php/hello/index/",
+  "public_html_path": "/web/"
+}

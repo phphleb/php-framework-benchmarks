@@ -1,0 +1,8 @@
+{
+  "name": "Laravel",
+  "mark": "laravel",
+  "version": "7.0.0",
+  "url": "https://laravel.com/docs/7.x",
+  "hello_world_uri": "/laravel/public/hello/",
+  "public_html_path": "/public/"
+}

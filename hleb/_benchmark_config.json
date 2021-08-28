@@ -1,0 +1,8 @@
+{
+  "name": "HLEB",
+  "mark": "hleb",
+  "version": "1.5.65",
+  "url": "https://phphleb.ru",
+  "hello_world_uri": "/hleb/public_html/hello/",
+  "public_html_path": "/public_html/"
+}

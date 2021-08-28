@@ -1,0 +1,8 @@
+{
+  "name": "Phalcon",
+  "mark": "phalcon",
+  "version": "-",
+  "url": "https://docs.phalcon.io",
+  "hello_world_uri": "/phalcon/public_html/hello/",
+  "public_html_path": "/public_html/"
+}

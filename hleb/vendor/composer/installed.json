@@ -1,0 +1,93 @@
+{
+    "packages": [
+        {
+            "name": "phphleb/debugpan",
+            "version": "v1.7",
+            "version_normalized": "1.7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phphleb/debugpan.git",
+                "reference": "a3a0dd3aaee432b934679d5dbc0f3357a39c9667"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phphleb/debugpan/zipball/a3a0dd3aaee432b934679d5dbc0f3357a39c9667",
+                "reference": "a3a0dd3aaee432b934679d5dbc0f3357a39c9667",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0.0 || ^8.0.0",
+                "phphleb/framework": "^1.5.52"
+            },
+            "time": "2021-01-31T17:51:53+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Foma Tuturov",
+                    "email": "fomiash@yandex.ru"
+                }
+            ],
+            "description": "Debug panel for Micro-Framework HLEB",
+            "homepage": "https://phphleb.ru",
+            "support": {
+                "source": "https://github.com/phphleb/debugpan/tree/v1.7"
+            },
+            "install-path": "../phphleb/debugpan"
+        },
+        {
+            "name": "phphleb/framework",
+            "version": "1.5.65",
+            "version_normalized": "1.5.65.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phphleb/framework.git",
+                "reference": "b3b660941f9179c1c9fb33674041b1b2a307ba0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phphleb/framework/zipball/b3b660941f9179c1c9fb33674041b1b2a307ba0a",
+                "reference": "b3b660941f9179c1c9fb33674041b1b2a307ba0a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.0.0"
+            },
+            "time": "2021-06-11T19:17:16+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Foma Tuturov",
+                    "email": "fomiash@yandex.ru"
+                }
+            ],
+            "description": "Engine for Micro-Framework HLEB",
+            "homepage": "https://phphleb.ru",
+            "keywords": [
+                "framework",
+                "hleb",
+                "micro-framework",
+                "microframework",
+                "php",
+                "php framework",
+                "phphleb"
+            ],
+            "support": {
+                "source": "https://github.com/phphleb/framework/tree/1.5.65"
+            },
+            "install-path": "../phphleb/framework"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

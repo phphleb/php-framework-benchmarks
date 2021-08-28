@@ -1,0 +1,8 @@
+{
+  "name": "Symfony",
+  "mark": "symfony",
+  "url": "https://symfony.com/",
+  "version": "5.3.99",
+  "hello_world_uri": "/symfony/public/hello/",
+  "public_html_path": "/public/"
+}
