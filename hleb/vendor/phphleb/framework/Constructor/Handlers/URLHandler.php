@@ -10,34 +10,43 @@ declare(strict_types=1);
 
 namespace Hleb\Constructor\Handlers;
 
+use Hleb\Main\Helpers\RangeChecker;
+
+/**
+ * @package Hleb\Constructor\Handlers
+ * @internal
+*/
 final class URLHandler
 {
     // Parse the array with routes.
     // Разбор массива с маршрутами.
-    public function page(array $blocks) {
+    public function page(array &$blocks, string $url = null, string $method = null, string $domain = null) {
         $searchDomains = $blocks['domains'] ?? false;
-        // Clearing global data.
-        // Очистка глобальных данных.
-        unset($blocks['domains']);
-        unset($blocks['update']);
-        unset($blocks['render']);
-        unset($blocks['addresses']);
+        $searchMultiple = $blocks['multiple'] ?? false;
+        // Clearing incoming data.
+        // Очистка входящих данных.
+        unset($blocks['domains'], $blocks['update'], $blocks['render'], $blocks['addresses'], $blocks['multiple']);
 
-        $url = Request::getMainClearUrl();
-        $blocks = $searchDomains ? $this->matchSubdomains($blocks) : $blocks;
-        if (empty(count($blocks))) {
+        !$searchDomains or $this->matchSubdomains($blocks, $domain ?? hleb_get_host());
+        if (!count($blocks)) {
             // No suitable route was found for the current subdomain.
             // Подходящего роута по текущему поддомену не найдено.
             return false;
         }
 
-        $blocks = $this->matchSearchType($blocks);
-        if (empty(count($blocks))) {
+        $adminPanData = $this->matchSearchType($blocks, $method ?? $_SERVER['REQUEST_METHOD']);
+        if (!count($blocks)) {
             // No suitable route of type REQUEST_METHOD found.
             // Подходящего роута по типу REQUEST_METHOD не найдено.
             return false;
         }
-        return $this->matchSearchAllPath($blocks, $url);
+        return $this->matchSearchAllPath($blocks, $url ?? $this->getMainClearUrl(), $adminPanData, (bool)$searchMultiple);
+    }
+
+    // Returns the relative current URL without GET parameters.
+    // Возвращает относительный текущий URL без GET-параметров.p
+    private function getMainClearUrl() {
+        return explode('?', urldecode($_SERVER['REQUEST_URI']))[0];
     }
 
     // Remove extra slashes.
@@ -54,12 +63,11 @@ final class URLHandler
 
     // Find a method for subdomains.
     // Поиск метода для субдоменов.
-    private function matchSubdomains($blocks) {
-        $host = array_reverse(explode('.', hleb_get_host()));
+    private function matchSubdomains(&$blocks, $httpHost) {
+        $host = array_reverse(explode('.', $httpHost));
         if ($host[0] === 'localhost') {
             array_unshift($host, '*');
         }
-        $resultBlocks = [];
         foreach ($blocks as $key => $block) {
             $search = [];
             $actions = !empty($block['actions']) ? $block['actions'] : [];
@@ -91,25 +99,25 @@ final class URLHandler
                     }
                 }
             }
-            if (count($search) == 0 || !in_array(false, $search)) $resultBlocks[] = $block;
+            if (!(count($search) == 0 || !in_array(false, $search))) {
+                unset($blocks[$key]);
+            }
         }
-        return $resultBlocks;
     }
 
     // Sort the list of routes and filter by the appropriate type.
     // Сортировка списка роутов и отбор по подходящему типу.
-    private function matchSearchType($blocks) {
-        $realType = strtolower($_SERVER['REQUEST_METHOD']);
+    private function matchSearchType(&$blocks, $method) {
+        $realType = strtolower($method);
         if (!in_array($realType, HLEB_HTTP_TYPE_SUPPORT)) {
             if (!headers_sent()) {
-                http_response_code (405);
+                http_response_code(405);
                 header('Allow: ' . strtoupper(implode(',', HLEB_HTTP_TYPE_SUPPORT)));
                 header('Content-length: 0');
             }
             // End of script execution before starting the main project.
             hl_preliminary_exit();
         }
-        $resultBlocks = [];
         $adminPanData = [];
         foreach ($blocks as $key => $block) {
             $type = [];
@@ -133,44 +141,51 @@ final class URLHandler
             if (count($type) === 0) {
                 $type = ['get'];
             }
-            if (in_array($realType, $type) || $realType == 'options') {
-                $resultBlocks[] = $block;
+            if (!(in_array($realType, $type) || $realType == 'options')) {
+                unset($blocks[$key]);
             }
         }
-        foreach ($resultBlocks as &$resultBlock) {
-            $resultBlock['_AdminPanelData'] = $adminPanData;
-        }
-        return $resultBlocks;
+        return $adminPanData;
     }
 
     // Returns the matching route, or `false` if not found.
     // Возвращает совпавший роут или `false` если не найден.
-    private function matchSearchAllPath(array $blocks, string $resultUrl) {
-        $resultUrlParts = array_reverse(explode('/', $resultUrl));
+    private function matchSearchAllPath(array &$blocks, string $resultUrl, array $adminPanData = [], bool $multiple = false) {
+        $resultUrlParts = array_reverse(explode('/', trim($resultUrl, ' \\/')));
         $url = $this->trimEndSlash($resultUrl);
-        foreach ($blocks as $key => $block) {
-            $result = $this->matchSearchPath($block, $url, $resultUrlParts);
-            if ($result !== false) return $result;
+        foreach ($blocks as $key => &$block) {
+            $result = $this->matchSearchPath($block, $url, $resultUrlParts, $multiple);
+            if ($result !== false) {
+                $result['_AdminPanelData'] = $adminPanData;
+                return $result;
+            }
         }
         return false;
     }
 
     // Returns data if the route matches the URL, otherwise `false`.
     // Возвращает данные, если роут подходит под URL, иначе `false`.
-    private function matchSearchPath(array $block, string $resultUrl, array $resultUrlParts) {
+    private function matchSearchPath(array $block, string $resultUrl, array $resultUrlParts, bool $multiple) {
         $url = '';
         $actions = $block['actions'] ?? [];
         $mat = [];
         foreach ($actions as $k => $action) {
             if (isset($action['prefix'])) {
-                $url = $this->compoundUrl([$url, $action['prefix']]);
+                $url = $url . '/' . $action['prefix'];
             } else if (isset($action['where']) && count($action['where'][0]) > 0) {
                 foreach ($action['where'][0] as $key => $value) {
                     $mat[$key] = $value;
                 }
             }
         }
-        $originUrl = $this->compoundUrl([$url, $block['data_path'] ?? '']);
+        if ($multiple) {
+            $originUrl = $this->generateUrlFromFacetsRange($url, $block['data_path'] ?? '', $resultUrlParts);
+            if (is_bool($originUrl)) {
+                return $originUrl ? $block : false;
+            }
+        } else {
+            $originUrl = $this->compoundUrl([$url, $block['data_path'] ?? '']);
+        }
         $url = $this->trimEndSlash($originUrl);
         $urlParts = array_reverse(explode('/', $url));
         $resultShift = array_shift($urlParts);
@@ -196,6 +211,10 @@ final class URLHandler
                 }
                 foreach ($generateUrls as $q => $generateUrl) {
                     $generateRealUrls[$q] = $generateRealUrls[$q] ?? '';
+                    if (strlen($generateRealUrls[$q]) > 1 && $generateRealUrls[$q][0] === '@' && $generateUrl[0] === '@' && $generateUrl[1] === '{') {
+                        $generateUrl = ltrim($generateUrl, '@');
+                        $generateRealUrls[$q] = ltrim($generateRealUrls[$q], '@');
+                    }
                     if (!empty($generateUrl)) {
                         if ($generateUrl[0] === '{' && $generateUrl[strlen($generateUrl) - 1] === '}') {
                             $exp = trim($generateUrl, '{?}');
@@ -223,6 +242,38 @@ final class URLHandler
             }
         }
         return false;
+    }
+
+    // Value substitution instead of abbreviation at the end of the route.
+    // Подстановка значений вместо сокращения в конце маршрута.
+    private function generateUrlFromFacetsRange(string $prefix, string $url, array $resultUrlParts) {
+        $compoundUrl = $this->compoundUrl([$prefix, $url]);
+        if (substr_count($url, '...') !== 1) {
+            return $compoundUrl;
+        }
+        $urlParts = explode('/', trim($compoundUrl, ' \\/'));
+        $endUrl = array_pop($urlParts);
+        if (strpos($endUrl, '...') !== 0) {
+            return false;
+        }
+        $resultUrlParts = array_reverse($resultUrlParts);
+        foreach ($urlParts as $key => $part) {
+            if ($resultUrlParts[$key] !== $part) {
+                return false;
+            }
+        }
+        $facetsCount = count($resultUrlParts) - count($urlParts);
+        if ($facetsCount > 0) {
+            $checkRange = (new RangeChecker(trim($endUrl, ' .')))->check($facetsCount);
+            if (!$checkRange) {
+                return $compoundUrl;
+            }
+        }
+        foreach (array_values(array_slice($resultUrlParts, count($urlParts))) as $key => $value) {
+            Request::add((string)$key, $value);
+        }
+
+        return true;
     }
 }
 

@@ -40,6 +40,7 @@ class ComposerStaticInit8f1b40e36f30c8df0366de3ed35214c9
         'App\\Commands\\DefaultTask' => __DIR__ . '/../..' . '/app/Commands/DefaultTask.php',
         'App\\Commands\\RotateLogsTask' => __DIR__ . '/../..' . '/app/Commands/RotateLogsTask.php',
         'App\\Controllers\\DefaultController' => __DIR__ . '/../..' . '/app/Controllers/DefaultController.php',
+        'App\\Controllers\\TestController' => __DIR__ . '/../..' . '/app/Controllers/TestController.php',
         'App\\Middleware\\After\\DefaultMiddlewareAfter' => __DIR__ . '/../..' . '/app/Middleware/After/DefaultMiddlewareAfter.php',
         'App\\Middleware\\Before\\DefaultMiddlewareBefore' => __DIR__ . '/../..' . '/app/Middleware/Before/DefaultMiddlewareBefore.php',
         'App\\Models\\DefaultModel' => __DIR__ . '/../..' . '/app/Models/DefaultModel.php',
@@ -87,6 +88,7 @@ class ComposerStaticInit8f1b40e36f30c8df0366de3ed35214c9
         'Hleb\\Constructor\\TwigCreator' => __DIR__ . '/..' . '/phphleb/framework/Constructor/TwigCreator.php',
         'Hleb\\Constructor\\VCreator' => __DIR__ . '/..' . '/phphleb/framework/Constructor/VCreator.php',
         'Hleb\\Constructor\\Workspace' => __DIR__ . '/..' . '/phphleb/framework/Constructor/Workspace.php',
+        'Hleb\\Idnaconv\\IdnaConvert' => __DIR__ . '/..' . '/phphleb/framework/Idnaconv/IdnaConvert.php',
         'Hleb\\Main\\Commands\\MainLaunchTask' => __DIR__ . '/..' . '/phphleb/framework/Main/Commands/MainLaunchTask.php',
         'Hleb\\Main\\Console\\ConsoleColorOutput' => __DIR__ . '/..' . '/phphleb/framework/Main/Console/ConsoleColorOutput.php',
         'Hleb\\Main\\Console\\CreateTask' => __DIR__ . '/..' . '/phphleb/framework/Main/Console/CreateTask.php',
@@ -94,6 +96,7 @@ class ComposerStaticInit8f1b40e36f30c8df0366de3ed35214c9
         'Hleb\\Main\\DB' => __DIR__ . '/..' . '/phphleb/framework/Main/DB.php',
         'Hleb\\Main\\DataDebug' => __DIR__ . '/..' . '/phphleb/framework/Main/DataDebug.php',
         'Hleb\\Main\\Errors\\ErrorOutput' => __DIR__ . '/..' . '/phphleb/framework/Main/Errors/ErrorOutput.php',
+        'Hleb\\Main\\Helpers\\RangeChecker' => __DIR__ . '/..' . '/phphleb/framework/Main/Helpers/RangeChecker.php',
         'Hleb\\Main\\HomeConnector' => __DIR__ . '/..' . '/phphleb/framework/Main/HomeConnector.php',
         'Hleb\\Main\\Info' => __DIR__ . '/..' . '/phphleb/framework/Main/Info.php',
         'Hleb\\Main\\Insert\\BaseSingleton' => __DIR__ . '/..' . '/phphleb/framework/Main/Insert/BaseSingleton.php',
@@ -102,6 +105,7 @@ class ComposerStaticInit8f1b40e36f30c8df0366de3ed35214c9
         'Hleb\\Main\\MainDB' => __DIR__ . '/..' . '/phphleb/framework/Main/MainDB.php',
         'Hleb\\Main\\MainTemplate' => __DIR__ . '/..' . '/phphleb/framework/Main/MainTemplate.php',
         'Hleb\\Main\\MyDebug' => __DIR__ . '/..' . '/phphleb/framework/Main/MyDebug.php',
+        'Hleb\\Main\\PdoManager' => __DIR__ . '/..' . '/phphleb/framework/Main/PdoManager.php',
         'Hleb\\Main\\ProjectLoader' => __DIR__ . '/..' . '/phphleb/framework/Main/ProjectLoader.php',
         'Hleb\\Main\\TryClass' => __DIR__ . '/..' . '/phphleb/framework/Main/TryClass.php',
         'Hleb\\Main\\WorkDebug' => __DIR__ . '/..' . '/phphleb/framework/Main/WorkDebug.php',
@@ -115,7 +119,6 @@ class ComposerStaticInit8f1b40e36f30c8df0366de3ed35214c9
         'Hleb\\Scheme\\Home\\Constructor\\Routes\\StandardRoute' => __DIR__ . '/..' . '/phphleb/framework/Scheme/Home/Constructor/Routes/StandardRoute.php',
         'Hleb\\Scheme\\Home\\Main\\Connector' => __DIR__ . '/..' . '/phphleb/framework/Scheme/Home/Main/Connector.php',
         'Phphleb\\Debugpan\\DPanel' => __DIR__ . '/..' . '/phphleb/debugpan/DPanel.php',
-        'idna_convert' => __DIR__ . '/..' . '/phphleb/framework/idnaconv/idna_convert.class.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

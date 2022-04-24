@@ -96,8 +96,8 @@ class DB
      |
      |--------------------------------------------------------------------------------------
     */
-    public static function run($sql, $args = [], $config_key = null) {
-        return \Hleb\Main\MainDB::run($sql, $args, $config_key);
+    public static function run(string $sql, array $args = [], $configKey = null) {
+        return \Hleb\Main\MainDB::run($sql, $args, $configKey);
     }
 
 
@@ -105,10 +105,10 @@ class DB
      |--------------------------------------------------------------------------------------
      | Regular database query like mysql.
      |--------------------------------------------------------------------------------------
-     | DB::db_query("SELECT * FROM tablename WHERE name=" . $per)
+     | DB::dbQuery("SELECT * FROM tablename WHERE name=" . $per)
      | DB::quote($per) - quoting the string values specified in the query.
      | Result:
-     | $result = DB::db_query("SELECT id FROM tablename WHERE name=" . (DB::quote($per)) );
+     | $result = DB::dbQuery("SELECT id FROM tablename WHERE name=" . (DB::quote($per)) );
      |
      | [config key] - select the type of connection.
      |
@@ -116,17 +116,51 @@ class DB
      |--------------------------------------------------------------------------------------
      | Обычный запрос в базу данных по типу mysql
      |--------------------------------------------------------------------------------------
-     | DB::db_query("SELECT * FROM tablename WHERE name=" . $per)
+     | DB::dbQuery("SELECT * FROM tablename WHERE name=" . $per)
      | DB::quote($per) - экранирование строковых значений, указываемых в запросе
      | в итоге:
-     | $result = DB::db_query("SELECT id FROM tablename WHERE name=" . (DB::quote($per)) );
+     | $result = DB::dbQuery("SELECT id FROM tablename WHERE name=" . (DB::quote($per)) );
      |
      | [config key] - выбор типа соединения.
      |
      |--------------------------------------------------------------------------------------
     */
-    public static function db_query($sql, $config_key = null) {
-        return \Hleb\Main\MainDB::db_query($sql, $config_key);
+    public static function dbQuery(string $sql, $configKey = null) {
+        return \Hleb\Main\MainDB::dbQuery($sql, $configKey);
+    }
+
+    /**
+     * @deprecated
+     */
+    public static function db_query(string $sql, $configKey = null) {
+        return self::dbQuery($sql, $configKey);
+    }
+
+    /*
+     |--------------------------------------------------------------------------------------
+     | Returns a PDO object initialized from the current or specified configuration.
+     |--------------------------------------------------------------------------------------
+     | DB::getPdoInstance()->getAttribute(\PDO::ATTR_DRIVER_NAME);
+     | // similarly
+     | DB::getPdoInstance(HLEB_TYPE_DB)->getAttribute(\PDO::ATTR_DRIVER_NAME);
+     |
+     |
+     |--------------------------------------------------------------------------------------
+     | Возвращает инициализированный из текущей или указанной конфигурации объект PDO.
+     |--------------------------------------------------------------------------------------
+     |  DB::getPdoInstance()->getAttribute(\PDO::ATTR_DRIVER_NAME);
+     |  // аналогично
+     |  DB::getPdoInstance(HLEB_TYPE_DB)->getAttribute(\PDO::ATTR_DRIVER_NAME);
+     |
+     |--------------------------------------------------------------------------------------
+    */
+    public static function getPdoInstance($configKey = null) {
+        return \Hleb\Main\MainDB::getPdoInstance($configKey);
+    }
+
+    /** @see \Hleb\Main\DB::getPdoInstance() */
+    public static function getNewPdoInstance($configKey = null) {
+        return \Hleb\Main\MainDB::getNewPdoInstance($configKey);
     }
 }
 

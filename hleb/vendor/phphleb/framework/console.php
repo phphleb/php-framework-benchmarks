@@ -3,22 +3,40 @@ $arguments = $argv[1] ?? null;
 
 // End of script execution (before starting the main project).
 if (!function_exists('hl_preliminary_exit')) {
+    /**
+     * @param string $text - message text.
+     *
+     * @internal
+     */
     function hl_preliminary_exit($text = '') {
         exit($text);
     }
 }
 
-if (!defined('HLEB_GLOBAL_DIRECTORY')) define('HLEB_GLOBAL_DIRECTORY', dirname(__DIR__, 3));
+defined('HLEB_GLOBAL_DIRECTORY') or define('HLEB_GLOBAL_DIRECTORY', dirname(__DIR__, 3));
 
-define('HLEB_STORAGE_CACHE_ROUTES_DIRECTORY', (defined('HLEB_STORAGE_DIRECTORY') ? HLEB_STORAGE_DIRECTORY : HLEB_GLOBAL_DIRECTORY . DIRECTORY_SEPARATOR . "/storage") . "/cache/routes");
+//To set a different directory name 'vendor' add HLEB_VENDOR_DIR_NAME to the constants
+define('HLEB_VENDOR_DIRECTORY', defined('HLEB_VENDOR_DIR_NAME') ? HLEB_GLOBAL_DIRECTORY . '/' . HLEB_VENDOR_DIR_NAME : dirname(__DIR__, 2));
 
-define('HLEB_VENDOR_DIRECTORY', dirname(__DIR__, 2));
+defined('HLEB_STORAGE_DIRECTORY') or  define('HLEB_STORAGE_DIRECTORY', HLEB_GLOBAL_DIRECTORY . DIRECTORY_SEPARATOR . "storage");
 
-define('HLEB_VENDOR_DIR_NAME', array_reverse(explode(DIRECTORY_SEPARATOR, HLEB_VENDOR_DIRECTORY))[0]);
+define('HLEB_STORAGE_CACHE_ROUTES_DIRECTORY', rtrim(HLEB_STORAGE_DIRECTORY, '\\/ ') . "/cache/routes");
+
+defined('HLEB_PROJECT_LOG_ON') or define('HLEB_PROJECT_LOG_ON', true);
+
+if (HLEB_PROJECT_LOG_ON) {
+    ini_set('log_errors', 'On');
+    ini_set('display_errors', '1');
+    ini_set('error_log', HLEB_STORAGE_DIRECTORY. DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . date('Y_m_d_') . 'errors.cli.log');
+}
+
+define('HLEB_LOAD_ROUTES_DIRECTORY', HLEB_GLOBAL_DIRECTORY . DIRECTORY_SEPARATOR . 'routes');
 
 const HLEB_PROJECT_DIRECTORY = HLEB_VENDOR_DIRECTORY . '/phphleb/framework';
 
 const HLEB_PROJECT_DEBUG = false;
+
+const HLEB_PROJECT_DEBUG_ON = false;
 
 const HLEB_HTTP_TYPE_SUPPORT = ['get', 'post', 'delete', 'put', 'patch', 'options'];
 
@@ -28,12 +46,25 @@ const HL_TWIG_CACHED_PATH = '/storage/cache/twig/compilation';
 
 define('HL_TWIG_CONNECTED', file_exists(HLEB_VENDOR_DIRECTORY . "/twig/twig"));
 
-if (!defined('HLEB_PROJECT_CLASSES_AUTOLOAD')) {
-    define('HLEB_PROJECT_CLASSES_AUTOLOAD', true);
-}
+defined('HLEB_PROJECT_CLASSES_AUTOLOAD') or define('HLEB_PROJECT_CLASSES_AUTOLOAD', true);
 
+/**
+ * @param string $path - file path.
+ *
+ * @internal
+ */
 function hleb_require(string $path) {
     require_once "$path";
+}
+
+/**
+ * @param string $subPath - directory name.
+ * @return string
+ *
+ * @internal
+ */
+function hleb_system_storage_path($subPath = '') {
+    return HLEB_STORAGE_DIRECTORY . (!empty($subPath) ? DIRECTORY_SEPARATOR . (trim($subPath, '\\/ ')) : '');
 }
 
 // Auto update packages
@@ -72,8 +103,10 @@ if ($arguments) {
         case '-routes-cc':
             if (file_exists(HLEB_STORAGE_CACHE_ROUTES_DIRECTORY . '/routes.txt')) {
                 unlink(HLEB_STORAGE_CACHE_ROUTES_DIRECTORY . '/routes.txt');
-                echo PHP_EOL . 'Route cache cleared.';
+                echo PHP_EOL . ' Deleted one file.';
             }
+            echo PHP_EOL . ' Route cache cleared.';
+            echo PHP_EOL;
             break;
         case '--clear-cache':
         case '-cc':
@@ -108,8 +141,9 @@ if ($arguments) {
                 " --help or -h      (displays a list of default console actions)" . PHP_EOL .
                 " --routes or -r    (forms a list of routes)" . PHP_EOL .
                 " --list or -l      (forms a list of commands)" . PHP_EOL .
-                "                   <command> [--help]" . PHP_EOL .
+                " --list <command> [--help] (command info)" . PHP_EOL .
                 " --logs or -lg     (prints multiple trailing lines from a log file)" . PHP_EOL .
+                " --find-route <url> [method] [domain] (route search by url)" . PHP_EOL .
                 " --new-task        (сreates a new command)" . PHP_EOL .
                 "                   --new-task example-task \"Short description\"" . PHP_EOL .
                 (HL_TWIG_CONNECTED ? " --clear-cache--twig or -cc-twig" . PHP_EOL . " --forced-cc-twig" . PHP_EOL : '');
@@ -138,15 +172,29 @@ if ($arguments) {
             include_once HLEB_PROJECT_DIRECTORY . '/Main/Console/CreateTask.php';
             new \Hleb\Main\Console\CreateTask(strval($argv[2] ?? ''), strval($argv[3] ?? ''));
             break;
+        case '--find-route':
+        case '-fr':
+            hlUploadAll();
+            if (class_exists('Phphleb\Rfinder\RouteFinder', true)) {
+                $address = $argv[2] ?? '';
+                if (!empty($address)) {
+                    $finder = (new \Phphleb\Rfinder\RouteFinder(strval($address), $argv[3] ?? 'GET', $argv[4] ?? null));
+                    echo $finder->getInfo() . PHP_EOL;
+                } else {
+                    echo 'Required URL not specified! php console --find-route <url> [method] [domain]'  . PHP_EOL;
+                }
+            } else {
+                echo  'You need to install the phphleb/rfinder library.' . PHP_EOL;
+            }
+            break;
         default:
             $file = $fn->convertCommandToTask($arguments);
-
             if (file_exists(HLEB_GLOBAL_DIRECTORY . "/app/Commands/$file.php")) {
                 hlUploadAll();
                 if (end($argv) === '--help') {
-                    hlShowCommandHelp(HLEB_GLOBAL_DIRECTORY, $file, $fn);
+                    hlShowCommandHelp(HLEB_GLOBAL_DIRECTORY, $file);
                 } else {
-                    hlCreateUsersTask(HLEB_GLOBAL_DIRECTORY, $file, $setArguments, $fn);
+                    hlCreateUsersTask(HLEB_GLOBAL_DIRECTORY, $file, $setArguments);
                 }
 
             } else {
@@ -157,17 +205,30 @@ if ($arguments) {
     echo "Missing arguments after `console`. Add --help to display more options.", PHP_EOL;
 }
 
-
+/**
+ * @return string
+ *
+ * @internal
+ */
 function hlConsoleCopyright() {
     $start = "2019";
     $cp = date("Y") != $start ? "$start - " . date("Y") : $start;
     return "(c)$cp Foma Tuturov";
 }
 
+/**
+ * @param string $type
+ * @return string
+ *
+ * @internal
+ */
 function hlAllowedHttpTypes($type) {
     return empty($type) ? "GET" : ((in_array(strtolower($type), HLEB_HTTP_TYPE_SUPPORT)) ? $type : $type . " [NOT SUPPORTED]");
 }
 
+/**
+ * @internal
+ */
 function hlUploadAll() {
 
     require HLEB_PROJECT_DIRECTORY . '/Main/Insert/DeterminantStaticUncreated.php';
@@ -200,6 +261,11 @@ function hlUploadAll() {
 
     // Custom class autoloader.
     // Собственный автозагрузчик классов.
+    /**
+     * @param string $class - class name.
+     *
+     * @internal
+     */
     function hl_main_autoloader($class) {
         \Hleb\Main\MainAutoloader::get($class);
     }
@@ -207,34 +273,49 @@ function hlUploadAll() {
     if (HLEB_PROJECT_CLASSES_AUTOLOAD) spl_autoload_register('hl_main_autoloader', true, true);
 }
 
-function hlCreateUsersTask($path, $class, $arg, Hleb\Main\Console\MainConsole $fn) {
-   $task =  hlCreateTaskClass($path, $class, $fn);
+/**
+ * @param string $path
+ * @param string $class
+ * @param array $arg
+ *
+ * @internal
+ */
+function hlCreateUsersTask($path, $class, $arg) {
+   $task =  hlCreateTaskClass($path, $class);
    if($task) {
        $task->createTask($arg);
    }
 }
 
-function hlCreateTaskClass($path, $class, Hleb\Main\Console\MainConsole $fn) {
+/**
+ * @param string $path
+ * @param string $class
+ * @return null|object
+ *
+ * @internal
+ */
+function hlCreateTaskClass($path, $class) {
     $realPath = $path . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'Commands' . DIRECTORY_SEPARATOR . $class . ".php";
     include_once "$realPath";
+    $namespace = str_replace('/', '\\', trim($class, '\\/ '));
 
-    $searchNames = $fn->searchOnceNamespace($realPath, $path . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'Commands');
-    if ($searchNames) {
-        foreach ($searchNames as $search_name) {
-            if (class_exists('App\Commands\\' . $search_name)) {
-                $className = 'App\Commands\\' . $search_name;
-               return new $className();
-            }
-        }
+    if (class_exists('App\Commands\\' . $namespace)) {
+        $className = 'App\Commands\\' . $namespace;
+        return new $className();
     }
     return null;
 }
 
 
-
-function hlShowCommandHelp($path, $class, Hleb\Main\Console\MainConsole $fn) {
+/**
+ * @param string $path
+ * @param string $class
+ *
+ * @internal
+ */
+function hlShowCommandHelp($path, $class) {
     /** @var object|null $task */
-    $task = hlCreateTaskClass($path, $class, $fn);
+    $task = hlCreateTaskClass($path, $class);
     if (!is_null($task)) {
         print PHP_EOL . 'DESCRIPTION: ' .  $task::DESCRIPTION . PHP_EOL . PHP_EOL;
         try {
@@ -262,21 +343,48 @@ function hlShowCommandHelp($path, $class, Hleb\Main\Console\MainConsole $fn) {
     print PHP_EOL . "No arguments." . PHP_EOL;
 }
 
-
+/**
+ * @return string
+ *
+ * @internal
+ */
 function hlGetFrameVersion() {
-    return hlSearchVersion(HLEB_PUBLIC_DIR . '/index.php', 'HLEB_FRAME_VERSION');
+    if(file_exists(HLEB_PUBLIC_DIR . '/index.php')) {
+        return hlSearchVersion(HLEB_PUBLIC_DIR . '/index.php', 'HLEB_FRAME_VERSION');
+    }
+    return '-';
 }
 
+/**
+ * @return string
+ *
+ * @internal
+ */
 function hlGetFrameworkVersion() {
     return hlSearchVersion(HLEB_PROJECT_DIRECTORY . '/init.php', 'HLEB_PROJECT_FULL_VERSION');
 }
 
+/**
+ * @param string $file
+ * @param string $const
+ * @return string
+ *
+ * @internal
+ */
 function hlSearchVersion($file, $const) {
     $content = file_get_contents($file, true);
     preg_match_all("|define\(\s*\'" . $const . "\'\s*\,\s*([^\)]+)\)|u", $content, $def);
     return trim($def[1][0] ?? 'undefined', "' \"");
 }
 
+/**
+ * @param array $files
+ * @param string $path
+ * @param object $fn
+ * @param string $scan_path
+ *
+ * @internal
+ */
 function hlClearCacheFiles($files, $path, $fn, $scan_path) {
     echo PHP_EOL, "Clearing cache [          ] 0% ";
     $all = count($files);
@@ -324,6 +432,11 @@ function hlClearCacheFiles($files, $path, $fn, $scan_path) {
 
 }
 
+/**
+ * @param string $path
+ *
+ * @internal
+ */
 function hlForcedClearCacheFiles($path) {
     $standardPath = str_replace('\\', '/', $path);
     if (!file_exists($path)) {
@@ -347,6 +460,11 @@ function hlForcedClearCacheFiles($path) {
     fwrite(STDOUT, "Delete files [//////////] 100% ");
 }
 
+/**
+ * @param string $path
+ *
+ * @internal
+ */
 function hlRemoveDir($path) {
     if (file_exists($path) && is_dir($path)) {
         $dir = opendir($path);

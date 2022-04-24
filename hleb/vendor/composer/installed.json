@@ -2,24 +2,24 @@
     "packages": [
         {
             "name": "phphleb/debugpan",
-            "version": "v1.7",
-            "version_normalized": "1.7.0.0",
+            "version": "v1.8",
+            "version_normalized": "1.8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phphleb/debugpan.git",
-                "reference": "a3a0dd3aaee432b934679d5dbc0f3357a39c9667"
+                "reference": "42eaf9b566699814d7f0a403eceebe8ee61fa104"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phphleb/debugpan/zipball/a3a0dd3aaee432b934679d5dbc0f3357a39c9667",
-                "reference": "a3a0dd3aaee432b934679d5dbc0f3357a39c9667",
+                "url": "https://api.github.com/repos/phphleb/debugpan/zipball/42eaf9b566699814d7f0a403eceebe8ee61fa104",
+                "reference": "42eaf9b566699814d7f0a403eceebe8ee61fa104",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0.0 || ^8.0.0",
                 "phphleb/framework": "^1.5.52"
             },
-            "time": "2021-01-31T17:51:53+00:00",
+            "time": "2021-12-24T16:28:53+00:00",
             "type": "library",
             "installation-source": "dist",
             "notification-url": "https://packagist.org/downloads/",
@@ -35,30 +35,30 @@
             "description": "Debug panel for Micro-Framework HLEB",
             "homepage": "https://phphleb.ru",
             "support": {
-                "source": "https://github.com/phphleb/debugpan/tree/v1.7"
+                "source": "https://github.com/phphleb/debugpan/tree/v1.8"
             },
             "install-path": "../phphleb/debugpan"
         },
         {
             "name": "phphleb/framework",
-            "version": "1.5.65",
-            "version_normalized": "1.5.65.0",
+            "version": "v1.6.53",
+            "version_normalized": "1.6.53.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phphleb/framework.git",
-                "reference": "b3b660941f9179c1c9fb33674041b1b2a307ba0a"
+                "reference": "258041784b98b312ffee462e1c97e18577077239"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phphleb/framework/zipball/b3b660941f9179c1c9fb33674041b1b2a307ba0a",
-                "reference": "b3b660941f9179c1c9fb33674041b1b2a307ba0a",
+                "url": "https://api.github.com/repos/phphleb/framework/zipball/258041784b98b312ffee462e1c97e18577077239",
+                "reference": "258041784b98b312ffee462e1c97e18577077239",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": ">=7.0.0"
             },
-            "time": "2021-06-11T19:17:16+00:00",
+            "time": "2022-04-17T10:47:53+00:00",
             "type": "library",
             "installation-source": "dist",
             "notification-url": "https://packagist.org/downloads/",
@@ -83,7 +83,7 @@
                 "phphleb"
             ],
             "support": {
-                "source": "https://github.com/phphleb/framework/tree/1.5.65"
+                "source": "https://github.com/phphleb/framework/tree/v1.6.53"
             },
             "install-path": "../phphleb/framework"
         }

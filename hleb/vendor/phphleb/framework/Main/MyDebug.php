@@ -64,11 +64,12 @@ final class MyDebug extends BaseSingleton
      *
      * Добавляет к значению <name> в отладночной панели собственные данные <data>.
      *
+     * @deprecated
      * @param string $name
      * @param $data
      */
     public static function insert_to_array(string $name, $data) {
-        if (self::check()) {
+        if (HLEB_PROJECT_DEBUG_ON) {
             if (isset(self::$data[$name]) && !is_array(self::$data[$name])) {
                 self::errorType($name, 'array');
             }
@@ -82,12 +83,13 @@ final class MyDebug extends BaseSingleton
      * Adds its own <data> string to the <name> value in the debug panel, which is appended to the current value.
      * 
      * Добавляет к значению <name> в отладночной панели собственную строку <data>, которая добавляется к текущему значению.
-     * 
+     *
+     * @deprecated
      * @param string $name
      * @param string $data
      */
     public static function insert_to_string(string $name, string $data) {
-        if (self::check()) {
+        if (HLEB_PROJECT_DEBUG_ON) {
             if (!in_array($name, self::$error)) {
                 if (!isset(self::$data[$name]))
                     self::$data[$name] = '';
@@ -108,11 +110,6 @@ final class MyDebug extends BaseSingleton
         self::$data[$name] = "Invalid source value format ( insert_to_$type for $name: " . gettype(self::$data[$name]) . ' ) !';
         self::$error[$name] = $name;
     }
-
-    private static function check() {
-        return HLEB_PROJECT_DEBUG_ON && $_SERVER['REQUEST_METHOD'] == 'GET';
-    }
-
 
 }
 

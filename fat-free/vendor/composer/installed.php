@@ -1,33 +1,41 @@
-<?php return array (
-  'root' => 
-  array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
-    'aliases' => 
-    array (
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => '44cc190c28ad6b9ec3d47310bdd8f4f517125c56',
+        'name' => '__root__',
+        'dev' => true,
     ),
-    'reference' => NULL,
-    'name' => '__root__',
-  ),
-  'versions' => 
-  array (
-    '__root__' => 
-    array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => NULL,
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => '44cc190c28ad6b9ec3d47310bdd8f4f517125c56',
+            'dev_requirement' => false,
+        ),
+        'bcosca/fatfree' => array(
+            'pretty_version' => '3.8.0',
+            'version' => '3.8.0.0',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../bcosca/fatfree',
+            'aliases' => array(),
+            'reference' => '7b14084349809e369c0a210bfc660e783df17324',
+            'dev_requirement' => false,
+        ),
+        'bcosca/fatfree-core' => array(
+            'pretty_version' => '3.8.0',
+            'version' => '3.8.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../bcosca/fatfree-core',
+            'aliases' => array(),
+            'reference' => 'cdd878db018280369b643fce62f70e55044f9ac4',
+            'dev_requirement' => false,
+        ),
     ),
-    'bcosca/fatfree' => 
-    array (
-      'pretty_version' => '3.7.3',
-      'version' => '3.7.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '62f40d88994b99a51cfba5556931e80e1bb64a8c',
-    ),
-  ),
 );

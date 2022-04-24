@@ -3,6 +3,8 @@
 
 Check your server for compatibility.
 
+#### PHP v7.3
+
 To install, place this project on your server and point the address to the root directory.
 
 or run locally
@@ -17,13 +19,13 @@ chmod -R 777 ./php-framework-benchmarks/
 PHP version higher than 7.0 is required as well as PHP extensions for the tested frameworks specified by their vendors.
 
 - `Phalcon` ~
-- `HLEB` v.1.5.65
-- `Fat-free` v.3.7.3
-- `Slim` v.4.8.1
-- `Yii2` v.2.0.43
-- `Lumen` v.8.1.1
-- `Symfony` v.5.3.99
-- `Laravel` v.7.0.0
+- `HLEB` v1.6.53
+- `Fat-free` v3.8.0
+- `Slim` v4.9.0
+- `Yii2` v2.0.43
+- `Lumen` v8.3.4
+- `Symfony` v5.3.99
+- `Laravel` v7.30.6
 
 ### [![EXAMPLE](https://raw.githubusercontent.com/phphleb/php-framework-benchmarks/main/example.png)](https://github.com/phphleb/php-framework-benchmarks)
 

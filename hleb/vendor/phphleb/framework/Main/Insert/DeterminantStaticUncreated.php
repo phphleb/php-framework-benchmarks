@@ -10,12 +10,15 @@ declare(strict_types=1);
 
 trait DeterminantStaticUncreated
 {
-    private static $instance;
+    private static $instance = null;
 
     protected function __construct() {}
 
     protected function __clone() {}
 
+    /**
+     * @internal
+     */
     public static function instance() {
         if (is_null(self::$instance)) {
             self::$instance = new static();

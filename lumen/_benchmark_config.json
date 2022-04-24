@@ -1,7 +1,7 @@
 {
   "name": "Lumen",
   "mark": "lumen",
-  "version": "8.1.1",
+  "version": "8.3.4",
   "url": "https://lumen.laravel.com/docs/8.x/",
   "hello_world_uri": "/lumen/public/hello/",
   "public_html_path": "/public/"

@@ -10,25 +10,29 @@ declare(strict_types=1);
 
 namespace Hleb\Constructor\Handlers;
 
+use Hleb\Idnaconv\IdnaConvert;
+
 final class AddressBar
 {
-    const IDNACONV_PATH = '/idnaconv/idna_convert.class.php';
-
     private $inputParameters;
 
+    /** @internal */
     public $redirect = null;
 
+    /** @internal */
     public $realUrl = null;
 
 
     // Initialization with input parameters.
     // Инициализация с вводными параметрами.
+    /** @internal */
     public function __construct(array $params) {
         $this->inputParameters = $params;
     }
 
     // Parses data to check the current URL, otherwise marks it as a redirect to the correct one.
     // Выполняет разбор данных для проверки текущего URL, в противном случае отмечается как редирект на правильный.
+    /** @internal */
     public function get() {
         $partsOfAddress = explode('?', $this->inputParameters['SERVER']['REQUEST_URI']);
         $address = rawurldecode(array_shift($partsOfAddress));
@@ -39,10 +43,9 @@ final class AddressBar
         $endElement = explode('/', $address);
         $fileUrl = stripos(end($endElement), '.') !== false;
         $relAddress = "";
-
         if (!empty($address)) {
             if (!$fileUrl) {
-                if ($address[strlen($address) - 1] == '/') {
+                if ($address[strlen($address) - 1] === '/') {
                     $relAddress = $this->inputParameters['HLEB_PROJECT_ENDING_URL'] ? $address : rtrim($address, "/");
                 } else {
                     $relAddress = $this->inputParameters['HLEB_PROJECT_ENDING_URL'] ? $address . '/' : $address;
@@ -58,9 +61,8 @@ final class AddressBar
         $idn = null;
         define('HLEB_MAIN_DOMAIN_ORIGIN', $host);
         if (stripos($host, 'xn--') !== false) {
-            $idnPath = $this->inputParameters['HLEB_PROJECT_DIRECTORY'] . self::IDNACONV_PATH;
-            require("$idnPath");
-            $idn = new \idna_convert(['idn_version' => 2008]);
+            require $this->inputParameters['HLEB_PROJECT_DIRECTORY'] . '/Idnaconv/IdnaConvert.php';
+            $idn = new IdnaConvert();
             $host = $idn->decode($host);
         }
 
@@ -84,6 +86,7 @@ final class AddressBar
         // Check if the URL is correct.
         // Проверка на корректность URL.
         $realUrl = $realProtocol . (preg_replace('/\/{2,}/', '/', $realHostWww . $relAddress)) . $realParameters;
+
         $partsOfActualUri = explode('?', $this->inputParameters['SERVER']['REQUEST_URI']);
         $firstActualUri = rawurldecode(array_shift($partsOfActualUri));
         $firstActualParams = count($partsOfActualUri) > 0 ? '?' . implode('?', $partsOfActualUri) : '';
@@ -93,7 +96,7 @@ final class AddressBar
             $realUrl =  rtrim($realUrl, '/');
             $actualUrl = rtrim($actualUrl, '/');
         }
-        if ($realUrl !== $actualUrl) {
+        if ($realUrl !== $actualUrl && $address !== '/') {
             $this->redirect($realUrl);
         }
         return $realUrl;

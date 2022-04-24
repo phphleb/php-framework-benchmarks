@@ -346,7 +346,7 @@ class Validator implements ValidatorContract
     public function after($callback)
     {
         $this->after[] = function () use ($callback) {
-            return call_user_func_array($callback, [$this]);
+            return $callback($this);
         };
 
         return $this;
@@ -430,7 +430,6 @@ class Validator implements ValidatorContract
      * Remove the given attribute.
      *
      * @param  string  $attribute
-     *
      * @return void
      */
     protected function removeAttribute($attribute)
@@ -1355,7 +1354,7 @@ class Validator implements ValidatorContract
         $callback = $this->extensions[$rule];
 
         if (is_callable($callback)) {
-            return call_user_func_array($callback, $parameters);
+            return $callback(...array_values($parameters));
         } elseif (is_string($callback)) {
             return $this->callClassBasedExtension($callback, $parameters);
         }
@@ -1372,7 +1371,7 @@ class Validator implements ValidatorContract
     {
         [$class, $method] = Str::parseCallback($callback, 'validate');
 
-        return call_user_func_array([$this->container->make($class), $method], $parameters);
+        return $this->container->make($class)->{$method}(...array_values($parameters));
     }
 
     /**

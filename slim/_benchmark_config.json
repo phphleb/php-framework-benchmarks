@@ -2,7 +2,7 @@
   "name": "Slim",
   "mark": "slim",
   "url": "https://www.slimframework.com",
-  "version": "4.8.1",
+  "version": "4.9.0",
   "hello_world_uri": "/slim/public_html/",
   "public_html_path": "/public_html/"
 }

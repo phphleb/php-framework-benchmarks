@@ -19,21 +19,17 @@ use Hleb\Main\Info;
 
 final class Workspace
 {
-    protected $block;
-
     protected $map;
 
-    protected $hlDebugInfo = ['time' => [], 'block' => []];
+    protected $debugTime = [];
 
-    protected $admFooter;
+    protected $admFooter = null;
 
     protected $controllerForepart = 'App\Controllers\\';
 
     protected $viewPath = '/resources/views/';
 
     public function __construct(array $block, array $map) {
-        $this->block = $block;
-        $this->hlDebugInfo['block'] = $block;
         $this->map = $map;
         $this->create($block);
     }
@@ -41,9 +37,9 @@ final class Workspace
     // Calculate the execution time for the debug panel.
     // Расчёт времени выполнения для панели отладки.
     private function calculateTime($name) {
-        $num = count($this->hlDebugInfo['time']) + 1;
+        $num = count($this->debugTime) + 1;
         if(defined('HLEB_START')) {
-            $this->hlDebugInfo['time'][$num . ' ' . $name] = round((microtime(true) - HLEB_START), 4);
+            $this->debugTime[$num . ' ' . $name] = round((microtime(true) - HLEB_START), 4);
         }
     }
 
@@ -55,7 +51,9 @@ final class Workspace
         $types = [];
         foreach ($actions as $key => $action) {
             if (isset($action['before'])) {
-                $this->allAction($action['before'], 'Before');
+                if ($this->allAction($action['before'], 'Before') === false) {
+                    hl_preliminary_exit();
+                }
                 $this->calculateTime('Class <i>' . $action['before'][0] . '</i>');
             }
             if (!empty($action['type'])) {
@@ -84,35 +82,40 @@ final class Workspace
         }
         $this->renderGetMethod($block);
         $this->calculateTime('Create Project');
-        if (HLEB_PROJECT_DEBUG_ON && $_SERVER['REQUEST_METHOD'] == 'GET' &&
+        if (HLEB_PROJECT_DEBUG_ON &&
             (new TryClass('Phphleb\Debugpan\DPanel'))->is_connect()) {
-            DPanel::init($this->hlDebugInfo);
+            DPanel::init(['time' => $this->debugTime, 'block' => $block]);
         }
-        foreach ($actions as $key => $action) {
+        foreach ($actions as $action) {
             if (isset($action['after'])) {
-                $this->allAction($action['after'], 'After');
+                if ($this->allAction($action['after'], 'After') === false) {
+                    hl_preliminary_exit();
+                }
             }
         }
     }
 
     // Parse and display the main action for the route.
     // Разбор и вывод основного действия для роута.
-    private function renderGetMethod($hlExcludedBlock) {
-        $hlExcludedParams = $hlExcludedBlock['data_params'];
-        if (count($hlExcludedParams) === 0) {
-            $hlExcludedActions = $hlExcludedBlock['actions'];
-            foreach ($hlExcludedActions as $k => $hlExc) {
-                if (isset($hlExc['controller']) || isset($hlExc['adminPanController'])) {
-                    $hlExcludedParams = isset($hlExc['controller']) ? $this->getController($hlExc['controller']) :
-                        $this->getAdminPanController($hlExc['adminPanController'], $hlExcludedBlock);
-                    if (is_array($hlExcludedParams)) {
-                        if (isset($hlExcludedParams[2]) && $hlExcludedParams[2] == 'render') {
+    private function renderGetMethod($block) {
+        $params = $block['data_params'];
+        if (count($params) === 0) {
+            $actions = $block['actions'];
+            foreach ($actions as $action) {
+                if (isset($action['controller']) || isset($action['adminPanController'])) {
+                    $params = isset($action['controller']) ? $this->getController($action['controller']) :
+                        $this->getAdminPanController($action['adminPanController'], $block);
+                    if ($params === false) {
+                        hl_preliminary_exit();
+                    }
+                    if (is_array($params)) {
+                        if (isset($params[2]) && $params[2] == 'render') {
                             // render
                         } else {
-                            $hlExcludedParams[0] = [$hlExcludedParams[0]];
+                            $params[0] = [$params[0]];
                         }
                     } else {
-                        echo $hlExcludedParams;
+                        echo $params;
                         if (!empty($this->admFooter)) echo $this->admFooter;
                         return;
                     }
@@ -121,25 +124,34 @@ final class Workspace
             }
         }
         // data()
-        if (is_array($hlExcludedParams) && !empty($hlExcludedParams[1])) {
-            Data::createData($hlExcludedParams[1]);
+        if (is_array($params) && !empty($params[1])) {
+            Data::createData($params[1]);
         }
-        if (isset($hlExcludedParams['text']) && is_string($hlExcludedParams['text'])) {
-            echo $hlExcludedParams['text'];
-        } else if (isset($hlExcludedParams[2]) && $hlExcludedParams[2] == 'views') {
+        if (isset($params['text']) && is_string($params['text'])) {
+            echo $params['text'];
+        } else if (isset($params[2]) && $params[2] == 'views') {
             //  view(...)
-            $this->selectableViewFile($hlExcludedParams[0][0], 'view', 37);
-        } else if (isset($hlExcludedParams[2]) && $hlExcludedParams[2] == 'render') {
+            $this->selectableViewFile($params[0][0], 'view', 37);
+        } else if (isset($params[2]) && $params[2] == 'render') {
             // render(...)
-            $hlExcludedParamsMaps = $hlExcludedParams[0];
-            Info::add('RenderMap', $hlExcludedParamsMaps);
-            foreach ($hlExcludedParamsMaps as $hlExcludedParamsMap) {
-                foreach ($this->map as $hlExcludedKey => $hlExcludedMaps) {
-                    if ($hlExcludedKey == $hlExcludedParamsMap) {
-                        foreach ($hlExcludedMaps as $hlExcluded_map) {
-                            $this->selectableViewFile($hlExcluded_map, 'render', 27);
+            $allMaps = $params[0];
+            Info::add('RenderMap', $allMaps);
+            foreach ($allMaps as $originMap) {
+                $select = 0;
+                foreach ($this->map as $key => $initMaps) {
+                    if ($key === $originMap) {
+                        if (empty($key) || $key[0]  !== '#' || strpos($key, ' ') !== false) {
+                            ErrorOutput::get('HL052-RENDER_ERROR: Warning in the "renderMap()" method. The set name must begin with a "#" character and not contain spaces. For example "#Main_map".' . '~' .
+                                ' В методе renderMap() первый символ названия должен быть "#", а само название не содержать пробелов. Образец "#Main_map".');
+                        }
+                        $select++;
+                        foreach ($initMaps as $initPage) {
+                            $this->selectableViewFile($initPage, 'render', 27);
                         }
                     }
+                }
+                if (!$select) {
+                    $this->selectableViewFile($originMap, 'render', 27);
                 }
             }
         }
@@ -151,37 +163,35 @@ final class Workspace
     private function selectableViewFile(string $file, string $methodType, int $errorNum) {
         // View error 404
         if ($methodType === 'view' && trim($file) === '404') {
-            hleb_bt3e3gl60pg8h71e00jep901_error_404();
+            hleb_page_404();
         }
 
         $extension = false;
-        $hlFile = trim($file, '\/ ');
-        $hlFileParts = explode("/", $hlFile);
-        $hlExcludedFile = str_replace(['\\', '//'], '/', HLEB_GLOBAL_DIRECTORY . $this->viewPath . $hlFile);
+        $file = trim($file, '\/ ');
+        $fileParts = explode('/', $file);
+        $proFile = str_replace(['\\', '//'], '/', HLEB_GLOBAL_DIRECTORY . $this->viewPath . $file);
         // twig file
-        if (file_exists($hlExcludedFile . ".php")) {
-            $hlExcludedFile .= '.php';
+        if (file_exists($proFile . '.php')) {
+            $proFile .= '.php';
         } else {
-            $extension = strripos(end($hlFileParts), ".") !== false;
+            $extension = strripos(end($fileParts), ".") !== false;
         }
-        if (file_exists($hlExcludedFile)) {
+        if (file_exists($proFile)) {
             if (!HL_TWIG_CONNECTED && $extension) {
-                $hlExt = strip_tags(array_reverse(explode(".", $hlFile))[0]);
-                $hlExcludedErrors = 'HL041-VIEW_ERROR: The file has the `.' . $hlExt . '` extension and is not processed.' .
+                $ext = strip_tags(array_reverse(explode(".", $file))[0]);
+                ErrorOutput::get('HL041-VIEW_ERROR: The file has the `.' . $ext . '` extension and is not processed.' .
                     ' Probably the TWIG template engine is not connected.' . '~' .
-                    ' Файл имеет расширение `.' . $hlExt . '`. и не обработан. Вероятно не подключён шаблонизатор TWIG.';
-                ErrorOutput::get($hlExcludedErrors);
+                    ' Файл имеет расширение `.' . $ext . '`. и не обработан. Вероятно не подключён шаблонизатор TWIG.');
             } else {
                 // view file
-                $extension ? (new TwigCreator())->view($hlFile) : (new VCreator($hlExcludedFile))->view();
+                $extension ? (new TwigCreator())->view($file) : (new VCreator($proFile))->view();
             }
         } else {
-            $errorFile = str_replace(str_replace(['\\', '//'], '/', HLEB_GLOBAL_DIRECTORY), "", $hlExcludedFile) . ($extension ? "" : ".php");
+            $errorFile = str_replace(str_replace(['\\', '//'], '/', HLEB_GLOBAL_DIRECTORY), "", $proFile) . ($extension ? '' : '.php');
             // Search to HL027-VIEW_ERROR or Search to HL037-VIEW_ERROR
-            $hlExcludedErrors = 'HL0' . $errorNum . '-VIEW_ERROR: Error in function ' . $methodType . '() ! ' .
+            ErrorOutput::get('HL0' . $errorNum . '-VIEW_ERROR: Error in function ' . $methodType . '() ! ' .
                 'Missing file `' . $errorFile . '` . ~ ' .
-                'Исключение в функции ' . $methodType . '() ! Отсутствует файл `' . $errorFile . '`';
-            ErrorOutput::get($hlExcludedErrors);
+                'Исключение в функции ' . $methodType . '() ! Отсутствует файл `' . $errorFile . '`');
         }
     }
 
@@ -198,25 +208,23 @@ final class Workspace
         $initiator = 'App\Middleware\\' . $type . '\\' . $className;
 
         if (!class_exists($initiator)) {
-            $hlExcludedErrors = 'HL043-ROUTE_ERROR: Сlass `' . $initiator . '` not exists. ~' .
-                ' Класс `' . $initiator . '` не обнаружен.';
-            ErrorOutput::get($hlExcludedErrors);
+            ErrorOutput::get('HL043-ROUTE_ERROR: Сlass `' . $initiator . '` not exists. ~' .
+                ' Класс `' . $initiator . '` не обнаружен.');
         }
 
         $initiatorObject = new $initiator;
 
         if (!is_callable([$initiatorObject, $method])) {
-            $hlExcludedErrors = 'HL048-ROUTE_ERROR: Method `' . $method . '` in class `' . $initiator . '` not exists. ~' .
-                ' Метод  `' . $method . '` для класса `' . $initiator . '` не обнаружен.';
-            ErrorOutput::get($hlExcludedErrors);
+            ErrorOutput::get('HL048-ROUTE_ERROR: Method `' . $method . '` in class `' . $initiator . '` not exists. ~' .
+                ' Метод  `' . $method . '` для класса `' . $initiator . '` не обнаружен.');
             return null;
         }
 
-        $initiatorObject->{$method}(...$arguments);
+        return $initiatorObject->{$method}(...$arguments);
     }
 
-    // Returns the initiated controller class.
-    // Возвращает инициированный класс контроллера.
+    // Returns the result of executing the method on the triggered controller class.
+    // Возвращает результат выполнения метода в инициированном классе контроллера.
     private function getController(array $action) {
         $arguments = $action[1] ?? [];
         $call = explode('@', $action[0]);
@@ -232,20 +240,18 @@ final class Workspace
         }
 
         if (isset($action[2]) && $action[2] == 'module') {
-            if (!defined('HLEB_OPTIONAL_MODULE_SELECTION')) {
-                define('HLEB_OPTIONAL_MODULE_SELECTION', file_exists(HLEB_GLOBAL_DIRECTORY . "/modules/"));
-            }
+            defined('HLEB_OPTIONAL_MODULE_SELECTION') or define('HLEB_OPTIONAL_MODULE_SELECTION', file_exists(HLEB_GLOBAL_DIRECTORY . "/modules/"));
+
             if (!HLEB_OPTIONAL_MODULE_SELECTION) {
-                $hlExcludedErrors = 'HL044-ROUTE_ERROR: Error in method ->module() ! ' . 'The `/modules` directory is not found, you must create it. ~' .
-                    ' Директория `/modules` не обнаружена, необходимо её создать.';
-                ErrorOutput::get($hlExcludedErrors);
+                ErrorOutput::get('HL044-ROUTE_ERROR: Error in method ->module() ! ' . 'The `/modules` directory is not found, you must create it. ~' .
+                    ' Директория `/modules` не обнаружена, необходимо её создать.');
             }
             $this->controllerForepart = 'Modules\\';
             $searchToModule = explode("/", trim($className, '/\\'));
             if (count($searchToModule) && !defined('HLEB_MODULE_NAME')) {
                 define('HLEB_MODULE_NAME', $searchToModule[0]);
             }
-            $this->viewPath = "/modules/" . implode("/", array_slice($searchToModule, 0, count($searchToModule) - 1)) . "/";
+            $this->viewPath = '/modules/' . implode('/', array_slice($searchToModule, 0, count($searchToModule) - 1)) . '/';
             $className = implode("\\", array_map('ucfirst', $searchToModule));
         }
 
@@ -253,12 +259,12 @@ final class Workspace
 
         if (!class_exists($initiator)) {
             if (!$searchTags) {
-                $hlExcludedErrors = 'HL047-ROUTE_ERROR: Class `' . $initiator . '` not exists. ~' .
+                $errors = 'HL047-ROUTE_ERROR: Class `' . $initiator . '` not exists. ~' .
                     ' Класс  `' . $initiator . '` не обнаружен.';
-                ErrorOutput::get($hlExcludedErrors);
+                ErrorOutput::get($errors);
                 return null;
             } else {
-                hleb_bt3e3gl60pg8h71e00jep901_error_404();
+                hleb_page_404();
             }
         }
 
@@ -266,12 +272,12 @@ final class Workspace
 
         if (!is_callable([$initiatorObject, $method])) {
             if (!$searchTags) {
-                $hlExcludedErrors = 'HL042-ROUTE_ERROR: Method `' . $method . '` in class `' . $initiator . '` not exists. ~' .
+                $errors = 'HL042-ROUTE_ERROR: Method `' . $method . '` in class `' . $initiator . '` not exists. ~' .
                     ' Метод  `' . $method . '` для класса `' . $initiator . '` не обнаружен.';
-                ErrorOutput::get($hlExcludedErrors);
+                ErrorOutput::get($errors);
                 return null;
             } else {
-                hleb_bt3e3gl60pg8h71e00jep901_error_404();
+                hleb_page_404();
             }
         }
 
@@ -298,22 +304,25 @@ final class Workspace
         $initiator = 'App\Controllers\\' . $className;
 
         if (!class_exists($initiator)) {
-            $hlExcludedErrors = 'HL046-ROUTE_ERROR: Class `' . $initiator . '` from `AdminPanController` not exists. ~' .
+            $errors = 'HL046-ROUTE_ERROR: Class `' . $initiator . '` from `AdminPanController` not exists. ~' .
                 ' Класс  `' . $initiator . '` для `AdminPanController` не обнаружен.';
-            ErrorOutput::get($hlExcludedErrors);
+            ErrorOutput::get($errors);
             return null;
         }
 
         $initiatorObject = new $initiator;
 
         if (!is_callable([$initiatorObject, $method])) {
-            $hlExcludedErrors = 'HL049-ROUTE_ERROR: Method `' . $method . '` in class `' . $initiator . '` not exists. ~' .
+            $errors = 'HL049-ROUTE_ERROR: Method `' . $method . '` in class `' . $initiator . '` not exists. ~' .
                 ' Метод  `' . $method . '` для класса `' . $initiator . '` не обнаружен.';
-            ErrorOutput::get($hlExcludedErrors);
+            ErrorOutput::get($errors);
             return null;
         }
 
         $controller = $initiatorObject->{$method}(...$arguments);
+        if ($controller === false) {
+            return false;
+        }
         $admObj = new \Phphleb\Adminpan\Add\AdminPanHandler();
         $this->admFooter = $admObj->getFooter();
         echo $admObj->getHeader($block['number'], $block['_AdminPanelData']);

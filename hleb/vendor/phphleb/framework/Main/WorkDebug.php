@@ -25,11 +25,12 @@ final class WorkDebug extends BaseSingleton
      * @param string|null $desc
      */
     public static function add($data, string $desc = null) {
-        if (HLEB_PROJECT_DEBUG_ON && $_SERVER['REQUEST_METHOD'] == 'GET') {
+        if (HLEB_PROJECT_DEBUG_ON) {
             self::$data[] = [$data, $desc];
         }
     }
 
+    /** @internal */
     public static function get(): array {
         return self::$data;
     }

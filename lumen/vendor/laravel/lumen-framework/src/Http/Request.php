@@ -35,7 +35,6 @@ class Request extends BaseRequest
      *
      * @param  string|null  $param
      * @param  mixed  $default
-     *
      * @return array|string
      */
     public function route($param = null, $default = null)
@@ -58,7 +57,7 @@ class Request extends BaseRequest
      */
     public function fingerprint()
     {
-        if (! $route = $this->route()) {
+        if (! $this->route()) {
             throw new RuntimeException('Unable to generate fingerprint. Route unavailable.');
         }
 

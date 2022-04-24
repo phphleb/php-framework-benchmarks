@@ -14,8 +14,10 @@ use Hleb\Main\Insert\BaseSingleton;
 
 final class Request extends BaseSingleton
 {
+    /** @internal */
     const NEEDED_TAGS = ['<', '>'];
 
+    /** @internal */
     const REPLACING_TAGS = ['&lt;', '&gt;'];
 
     private static $request = [];
@@ -36,6 +38,8 @@ final class Request extends BaseSingleton
 
     private static $url = null;
 
+    private static $domain = null;
+
     private static $address = null;
 
     private static $referer = null;
@@ -43,6 +47,8 @@ final class Request extends BaseSingleton
     private static $resources = null;
 
     private static $convertUri = null;
+
+    private static $inputBody = null;
 
     /**
      * Returns the current session data of $_SESSION.
@@ -236,14 +242,17 @@ final class Request extends BaseSingleton
     }
 
     /**
-     * Returns current domain.
+     * Returns current domain, of the form 'site.com'.
      * @return string
      *//**
-     * Возвращает текущий домен.
+     * Возвращает текущий домен, в виде 'site.com'.
      * @return string
      */
     public static function getDomain() {
-        return self::getHost();
+        if(is_null(self::$domain)) {
+            self::$domain = preg_replace('/^www./', '', trim(self::getHost(), ' /'));
+        }
+        return self::$domain;
     }
 
     /**
@@ -290,7 +299,7 @@ final class Request extends BaseSingleton
      * @return bool
      */
     public static function isXmlHttpRequest() {
-        return $_SERVER['X_REQUESTED_WITH'] == 'XMLHttpRequest';
+        return strtolower($_SERVER['HTTP_X_REQUESTED_WITH'] ?? '') === 'xmlhttprequest';
     }
 
     /**
@@ -526,6 +535,38 @@ final class Request extends BaseSingleton
     }
 
     /**
+     * Returns request body, does not work with `multipart/form-data`.
+     * @return string
+     *//**
+     * Возвращает тело запроса, не работает с `multipart/form-data`.
+     * @return string
+     */
+    public static function getInputBody() {
+        if (!is_null(self::$inputBody)) {
+            return self::$inputBody;
+        }
+        $inputData =  (string)file_get_contents('php://input');
+
+        return self::$inputBody = $inputData ? self::convertPrivateTags($inputData) : $inputData;
+    }
+
+    /**
+     * Returns the request body converted from JSON.
+     * @return array|false
+     *//**
+     * Возвращает преобразованное из JSON тело запроса.
+     * @return array|false
+     */
+    public static function getJsonBodyList() {
+        $body = self::getInputBody();
+        if (!$body) {
+            return false;
+        }
+        $list = json_decode($body, true);
+        return is_array($list) ? $list : false;
+    }
+
+    /**
      * Returns an object for placing loaded resources at the bottom of the page.
      * @return Resources|null
      *//**
@@ -562,12 +603,19 @@ final class Request extends BaseSingleton
 
     // Reserved for backward compatibility
     // Оставлено для обратной совместимости
+    /** @deprecated  */
     public static function close() {
         return null;
     }
 
     // Adds a parameter by name and value.
     // Добавляет параметр по имени и значению.
+    /**
+     * @param string $name
+     * @param string $value
+     *
+     * @internal
+     */
     public static function add(string $name, string $value) {
        self::$request[$name] = is_numeric($value) ? floatval($value) : self::clearData($value);
     }
@@ -628,7 +676,7 @@ final class Request extends BaseSingleton
     //Returns the result of clearing values from an array by name.
     // Возвращает результат получения значений из массива по названию.
     private static function checkValueInArray($value, array $list) {
-        return $value != null ? ((true === array_key_exists($value, $list) && strlen($list[$value]) > 0) ? $list[$value] : null) : $list;
+        return $value != null ? ((true === array_key_exists($value, $list) && $list[$value] !== '') ? $list[$value] : null) : $list;
     }
 
     //Returns the result of clearing values ​​in a string.
